@@ -1,0 +1,139 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width')
+
+		// if lt IE 9
+			<html class="no-js lt-ie9">
+			link(rel='stylesheet', href='css/lt-ie9.css')
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// stylesheets
+		link(href='http://fonts.googleapis.com/css?family=Overlock', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='css/font-awesome.min.css')
+		link(rel='stylesheet', href='js/vendor/prettyphoto/css/prettyPhoto.css')
+		link(rel='stylesheet', href='css/flexslider.css')
+		link(rel='stylesheet', href='css/main.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		script
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+		script(src='js/jquery-migrate-1.2.1.min.js')
+
+		// revolution slider
+		link(rel="stylesheet", type="text/css", href="js/vendor/revolution/css/settings.css")
+		script(src='js/vendor/revolution/js/jquery.easing.1.3.js') 
+		script(src='js/vendor/revolution/js/jquery.themepunch.plugins.min.js') 
+		script(src='js/vendor/revolution/js/jquery.themepunch.revolution.min.js') 
+
+
+	body
+		include partials/header
+
+
+		.content_wrapper
+			.revolution-container
+				#revolution_slider
+					ul
+						li(data-transition="slotzoom-horizontal")
+							img(src="assets/slides/transparent.png", alt="", style="background-color:#2a2a2a")
+							.caption.sft.big(data-x="center", data-y="90", data-speed="300", data-start="800", data-easing="easeOutExpo")
+								| Multiple Pages 
+								span.colored &
+								|  One Page
+							.caption.sfl.huge(data-x="center", data-y="176", data-speed="300", data-start="1100", data-easing="easeOutExpo") 
+								strong 2 in 1
+							.caption.sfr.big(data-x="30", data-y="150", data-speed="300", data-start="1400", data-easing="easeOutExpo")
+								img(src="assets/slides/responsive-laptop.png", alt="")
+							.caption.sfb(data-x="780", data-y="50", data-speed="300", data-start="1700", data-easing="easeOutExpo")
+								img(src="assets/slides/responsive-desktop.png", alt="")
+
+						li(data-transition="3dcurtain-horizontal")
+							img(src="assets/slides/04.jpg", alt="", style="background-color:#2a2a2a")
+							.caption.lfl(data-x="350", data-y="75", data-speed="900", data-start="100", data-easing="easeOutSine")
+								img(src="assets/slides/responsive-laptop.png", alt="")
+							.caption.lft(data-x="760", data-y="20", data-speed="900", data-start="900", data-easing="easeOutSine")
+								img(src="assets/slides/responsive-desktop.png", alt="")
+							.caption.lfb(data-x="523", data-y="150", data-speed="900", data-start="1200", data-easing="easeOutSine")
+								img(src="assets/slides/responsive-mobile.png", alt="")
+							.caption.sfl.big(data-x="20", data-y="100", data-speed="900", data-start="1500", data-easing="easeOutExpo")
+								| Elegant, Powerful & 
+							.caption.sfr.big(data-x="20", data-y="200", data-speed="900", data-start="1800", data-easing="easeOutExpo")
+								|  Fully 
+								strong 
+									span.colored Responsive!
+							.caption.sfb(data-x="20", data-y="300", data-speed="900", data-start="2100", data-easing="easeOutExpo")
+								.scroll
+									a.btn.btn-baby-blue.btn-large(href="#") Know More
+
+						li(data-transition="fade")
+							img(src="assets/slides/03.jpg", alt="", style="background-color:#2a2a2a")
+							.caption.sft.huge(data-x="center", data-y="117", data-speed="300", data-start="100", data-easing="easeOutExpo")
+								strong Light is powerful.
+							.caption.sfl.big(data-x="center", data-y="203", data-speed="300", data-start="800", data-easing="easeOutExpo")
+								| 7 portfolio layout, 12 blog post formats.
+							.caption.sfb.big(data-x="center", data-y="299", data-speed="300", data-start="1100", data-easing="easeOutExpo")
+								| And much more
+					.tp-bannertimer.tp-bottom
+
+
+			.container
+				h3 Blockquote
+				h5 Left
+				blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+				h5 Right
+				blockquote.pull-right Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+
+				h3 Dropcap
+				h5 Normal
+				p
+					span.dropcap L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Normal Colored
+				p
+					span.dropcap.colored L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square.colored D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle.colored E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				.divider
+						
+				h3 Hightlights
+				p
+					| Opsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quam, soluta, quia mollitia sequi voluptas magnam perspiciatis deleniti 
+					span.highlight ratione
+					|  ad molestias eum minima sed libero enim laborum sunt vel porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptas, placeat provident impedit
+					strong  maiores
+					|  odio doloribus corrupti exercitationem veritatis ipsum ipsam adipisci quis consequatur assumenda rerum corporis possimus ad architecto
+				.divider 
+
+
+		include partials/footer

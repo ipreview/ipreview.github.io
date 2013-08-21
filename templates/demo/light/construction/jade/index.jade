@@ -1,0 +1,208 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+	body
+		include partials/header
+		.content_wrapper
+			.filters-container
+				ul#items_filter.items-filters.clearfix
+					li(data-filter="*") Show All
+					li(data-filter=".item-beautful") Beautful
+					li(data-filter=".item-colorful") Colorful
+					li(data-filter=".item-amazing") Amazing
+
+			#items_container.items-container
+
+				//- different from the "#blog_grid", "portfolio_grid" so JS knows which function to trigger
+				#seamless_grid
+
+					.item-portfolio.item-beautful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-08.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-colorful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-13.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-beautful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-17.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-beautful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-19.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-16.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-beautful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-18.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-15.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-06.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-amazing
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-11.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-05.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-amazing
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-10.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+
+					.item-portfolio.item-colorful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-03.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-amazing
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-09.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-20.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-07.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-amazing
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-12.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-04.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-nature
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-02.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-amazing
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-14.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+					.item-portfolio.item-colorful
+						a(href="portfolio-detail.html")
+							img(src="assets/portfolio/400_300-01.jpg", alt="")
+							div
+								span
+									strong The title
+									br
+									| some description here
+
+		include partials/footer

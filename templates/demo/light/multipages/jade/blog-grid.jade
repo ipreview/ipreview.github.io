@@ -1,0 +1,119 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+	body
+		include partials/header
+		
+		.content_wrapper
+			.filters-container
+				ul#items_filter.items-filters.clearfix
+					li(data-filter="*") Show All
+					li(data-filter=".item-beautiful") Beautiful
+					li(data-filter=".item-posttypes") Post Formats
+
+			.main-content
+				.blog.blog-grid
+
+					#items_container
+
+						//- different from the portfolio "#seamless_grid", "portfolio_grid" so JS knows which function to trigger
+						#blog_grid 
+
+							.post-isotope.item-posttypes
+								a(href="blog-single.html")
+									img(src="assets/blog/480_01.jpg", alt="")
+								.post-content
+									h2.post-title 
+										a(href="#") Standard
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+							.post-isotope.item-posttypes
+								.post-content
+									.tweet
+										.author
+											a(href="#")
+												img.avatar(src="assets/gravatar/avatar.png", alt="")
+												span
+													strong Author Name
+													|  @author
+										p Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+											a(href="#") #TWEET
+											|  magna aliqua. Ut enim ad minim veniam.
+
+							.post-isotope.item-posttypes
+								a(href="assets/blog/480_10.jpg", data-gal="prettyPhoto")
+									img(src="assets/blog/480_10.jpg", alt="")
+								.post-content
+									h2.post-title 
+										a(href="#") Lightbox
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+							.post-isotope.item-posttypes
+								.responsive-video
+									iframe.responisve(width="480"
+										height="270"
+										src="http://www.youtube.com/embed/6I3kgbBp6PY")
+								.post-content
+									h2.post-title 
+										a(href="#") Youtube
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+							.post-isotope.item-beautiful.item-posttypes
+								.responsive-video
+									iframe.responisve(src="http://player.vimeo.com/video/22439234"
+									 width="480"
+									 height="270")
+								.post-content
+									h2.post-title 
+										a(href="#") Vimeo
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+							.post-isotope.item-posttypes
+								.post-thumbnail
+									.quote
+										span Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.author
+										span - Fet Dolore
+								.post-content
+									h2.post-title 
+										a(href="#") Blockquote
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+							.post-isotope.item-posttypes
+								.post-thumbnail
+									.icons-link
+									a.link(href="#") Link
+								.post-content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+							.post-isotope.item-beautiful
+								a(href="blog-single.html")
+									img(src="assets/blog/480_06.jpg", alt="")
+								.post-content
+									h2.post-title 
+										a(href="#") The Title
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+							.post-isotope
+								a(href="blog-single.html")
+									img(src="assets/blog/480_07.jpg", alt="")
+								.post-content
+									h2.post-title 
+										a(href="#") The Title
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+
+		include partials/footer

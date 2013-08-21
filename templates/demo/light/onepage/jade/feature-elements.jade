@@ -1,0 +1,354 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+
+	body
+		include partials/header
+		.main-content
+			.container
+				h3#table Tables
+				table.table
+					thead 
+						tr 
+							th # 
+							th First Name 
+							th Last Name 
+							th Username 
+					tbody 
+						tr 
+							td 1/td 
+							td Mark/td 
+							td Otto/td 
+							td @mdo/td 
+						tr 
+							td 2/td 
+							td Jacob/td 
+							td Thornton/td 
+							td @fat/td 
+						tr 
+							td 3/td 
+							td Larry/td 
+							td the Bird/td 
+							td @twitter/td 
+				.divider
+				h3 Tables Striped
+				table.table.table-striped
+					thead 
+						tr 
+							th # 
+							th First Name 
+							th Last Name 
+							th Username 
+					tbody 
+						tr 
+							td 1/td 
+							td Mark/td 
+							td Otto/td 
+							td @mdo/td 
+						tr 
+							td 2/td 
+							td Jacob/td 
+							td Thornton/td 
+							td @fat/td 
+						tr 
+							td 3/td 
+							td Larry/td 
+							td the Bird/td 
+							td @twitter/td 
+				.divider
+
+				h3#pagination Pagination
+				ul.dark-theme.simple-pagination
+					li
+						a.page-link.prev(href="#page-2") Prev
+					li
+						a.page-link(href="#page-1") 1
+					li
+						a.page-link(href="#page-2") 2
+					li.active
+						span.current 3
+					li
+						a.page-link(href="#page-4") 4
+					li.disabled
+						a.ellipse …
+					li
+						a.page-link(href="#page-18") 18
+					li
+						a.page-link(href="#page-19") 19
+					li
+						a.page-link(href="#page-20") 20
+					li
+						a.page-link.next(href="#page-4") Next
+				.divider
+
+
+				h3#testimonials Testimonials
+				.testimonials
+					.flexslider.flexslider-normal
+						ul.slides
+							li
+								.icons-quote
+								.blockquote-wrapper
+									blockquote Neque eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolores, sit quod quasi tempore at voluptatibus tempora odio eos consectetur et dolorum doloremque nemo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci pariatur dignissimos ipsam non beatae odit eum placeat eligendi temporibus nemo quod consequatur neque eveniet!
+								span.info
+									strong Psam Non
+									br
+									span Founder of Eveniet
+							li
+								.icons-quote
+								.blockquote-wrapper
+									blockquote Eveniet orem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolores, sit quod quasi tempore at voluptatibus tempora odio eos consectetur et dolorum doloremque nemo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci pariatur dignissimos ipsam non beatae odit eum placeat eligendi temporibus nemo quod consequatur neque eveniet!
+								span.info
+									strong Sasam Nona
+									br
+									span Founder of Nona
+							li
+								.icons-quote
+								.blockquote-wrapper
+									blockquote Orem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolores, sit quod quasi tempore at voluptatibus tempora odio eos consectetur et dolorum doloremque nemo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci pariatur dignissimos ipsam non beatae odit eum placeat eligendi temporibus nemo quod consequatur neque eveniet!
+								span.info
+									strong Nonae Orem
+									br
+									span Founder of Orem
+				.divider
+
+				h3#buttons Buttons, 30+
+				button.btn Default
+				button.btn.btn-primary Primary
+				button.btn.btn-info Info
+				button.btn.btn-success Success
+				button.btn.btn-warning Warning
+				button.btn.btn-danger Danger
+				button.btn.btn-inverse Inverse
+				br
+				br
+				button.btn.btn-white white
+				button.btn.btn-silver silver
+				button.btn.btn-grey grey
+				button.btn.btn-black black
+				button.btn.btn-red red
+				button.btn.btn-maroon maroon
+				button.btn.btn-yellow yellow
+				button.btn.btn-olive olive
+				button.btn.btn-lime lime
+				button.btn.btn-green green
+				br
+				br
+				button.btn.btn-aqua aqua
+				button.btn.btn-teal teal
+				button.btn.btn-blue blue
+
+				button.btn.btn-navy navy
+				button.btn.btn-fuchsia fuchsia
+				button.btn.btn-purple purple
+				button.btn.btn-air-superiority-blue air-superiority-blue
+				button.btn.btn-pink pink
+				button.btn.btn-aero aero
+				button.btn.btn-golden golden
+				br
+				br
+				button.btn.btn-orange orange
+				button.btn.btn-brown brown
+				button.btn.btn-cyan cyan
+				button.btn.btn-deep-taupe deep-taupe
+				button.btn.btn-baby-blue baby-blue
+				button.btn.btn-forest-green forest-green
+				button.btn.btn-coffee coffee
+				button.btn.btn-cornsilk cornsilk
+				button.btn.btn-dark-brown dark-brown
+				button.btn.btn-midori midori
+
+				h3 Buttons Sizes
+				p
+					button.btn.btn-large.btn-olive Large Button
+					button.btn.btn-large Large Button
+				p
+					button.btn.btn.btn-purple Default Button
+					button.btn.btn Default Button
+				p
+					button.btn.btn-small.btn-golden Small Button
+					button.btn.btn-small Small Button
+				p
+					button.btn.btn-mini.btn-maroon Mini Button
+					button.btn.btn-mini Mini Button
+
+				h3 Button Disabled
+				a.btn.btn-purple.disabled(href="#") Primary page-link
+				span   
+				a.btn.disabled(href="#") Link
+				.divider
+
+
+				h3#process-bar Process Bar
+				.progress
+					.bar(style="width: 30%;")
+				.progress.progress-striped
+					.bar(style="width: 45%;")
+				.progress.progress-striped.active
+					.bar(style="width: 60%;")
+				.progress
+					.bar.bar-success(style="width: 35%;")
+					.bar.bar-warning(style="width: 20%;")
+					.bar.bar-danger(style="width: 10%;")
+				.divider
+
+				h3#tooltips Tooltips
+				p
+					strong Tooltip on top
+					|  totam repudiandae porro adipisci. Odit, tempo quae quis dolorum tempore amet corporis non similique. Corporis, natus, nesciunt,
+					a.tooltip-display(href="#", data-toggle="tooltip", title="Something here", data-placement="top") Tooltip on top
+					|  tempora, maiores veniam quisodio eligendi ut unde odit qui velit magni vel consectetur alias.
+				p
+					strong Tooltip on right
+					|  totam repudiandae porro adipisci. Odit, tempo quae quis dolorum tempore amet corporis non similique. Corporis, natus, nesciunt,
+					a.tooltip-display(href="#", data-toggle="tooltip", title="Something here", data-placement="right") Tooltip on right
+					|  tempora, maiores veniam quisodio eligendi ut unde odit qui velit magni vel consectetur alias.
+				p
+					strong Tooltip on bottom
+					|  totam repudiandae porro adipisci. Odit, tempo quae quis dolorum tempore amet corporis non similique. Corporis, natus, nesciunt,
+					a.tooltip-display(href="#", data-toggle="tooltip", title="Something here", data-placement="bottom") Tooltip on bottom
+					|  tempora, maiores veniam quisodio eligendi ut unde odit qui velit magni vel consectetur alias.
+				p
+					strong Tooltip on left
+					|  totam repudiandae porro adipisci. Odit, tempo quae quis dolorum tempore amet corporis non similique. Corporis, natus, nesciunt,
+					a.tooltip-display(href="#", data-toggle="tooltip", title="Something here", data-placement="left") Tooltip on left
+					|  tempora, maiores veniam quisodio eligendi ut unde odit qui velit magni vel consectetur alias.
+				.divider
+
+				h3#accordion Accordion
+				ul.toggler
+					li
+						.toggler-heading
+							i.icon-plus-sign
+							p Lorem ipsum dolor sit amet?
+							i.icon-circle-arrow-right
+						.toggler-body.clearfix
+							p Ipsum dolor sit amet, consectetur adipisicing elit. Ut, facere, nostrum, iure saepe beatae esse voluptas alias labore aliquam optio dolore iusto! Deserunt, veritatis tenetur molestias aspernatur quos aperiam vel?
+							p Dolore qui nulla repudiandae in corrupti. Eligendi, laborum, distinctio dicta consequatur eaque dolore provident repellat accusamus.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae ipsa velit incidunt dolorem.
+					li
+						.toggler-heading
+							i.icon-plus-sign
+							p Ipsum dolor sit amet, consectetur adipisicing elit?
+							i.icon-circle-arrow-right
+						.toggler-body.clearfix
+							p Ipsum dolor sit amet, consectetur adipisicing elit. Ut, facere, nostrum, iure saepe beatae esse voluptas alias labore aliquam optio dolore iusto! Deserunt, veritatis tenetur molestias aspernatur quos aperiam vel?
+							p Dolore qui nulla repudiandae in corrupti. Eligendi, laborum, distinctio dicta consequatur eaque dolore provident repellat accusamus.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae ipsa velit incidunt dolorem.
+					li
+						.toggler-heading
+							i.icon-plus-sign
+							p Dolore qui nulla repudiandae in corrupti. Eligendi, laborum, distinctio dicta?
+							i.icon-circle-arrow-right
+						.toggler-body.clearfix
+							p Ipsum dolor sit amet, consectetur adipisicing elit. Ut, facere, nostrum, iure saepe beatae esse voluptas alias labore aliquam optio dolore iusto! Deserunt, veritatis tenetur molestias aspernatur quos aperiam vel?
+							p Dolore qui nulla repudiandae in corrupti. Eligendi, laborum, distinctio dicta consequatur eaque dolore provident repellat accusamus.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae ipsa velit incidunt dolorem.
+					li
+						.toggler-heading
+							i.icon-plus-sign
+							p Ipsum dolor sit amet?
+							i.icon-circle-arrow-right
+						.toggler-body.clearfix
+							p Ipsum dolor sit amet, consectetur adipisicing elit. Ut, facere, nostrum, iure saepe beatae esse voluptas alias labore aliquam optio dolore iusto! Deserunt, veritatis tenetur molestias aspernatur quos aperiam vel?
+							p Dolore qui nulla repudiandae in corrupti. Eligendi, laborum, distinctio dicta consequatur eaque dolore provident repellat accusamus.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae ipsa velit incidunt dolorem.
+				.divider
+
+				h3#tab Tab
+				h5 Horizontal Tab
+				.tab-horizontal
+					ul.nav.nav-tabs
+						li.active
+							a(href="#horizontal_tab1", data-toggle="tab") Tab1
+						li
+							a(href="#horizontal_tab2", data-toggle="tab") Tab2
+						li
+							a(href="#horizontal_tab3", data-toggle="tab") Tab3
+						li
+							a(href="#horizontal_tab4", data-toggle="tab") Tab4
+					.tab-content.clearfix
+						#horizontal_tab1.tab-pane.fade.active.in
+							p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						#horizontal_tab2.tab-pane.fade
+							p Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+						#horizontal_tab3.tab-pane.fade
+							p Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+						#horizontal_tab4.tab-pane.fade
+							p Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+				h5 Vertical Tab
+				.tab-vertical.clearfix
+					.tabs-bg
+					ul.nav.nav-tabs
+						li.active 
+							a(href="#tab-2012", data-toggle="tab") Lorem ipsum dolorem sem
+						li
+							a(href="#tab-2011", data-toggle="tab") Corem ipsum
+						li
+							a(href="#tab-2010", data-toggle="tab") Something
+					.tab-content
+						#tab-2012.tab-pane.fade.active.in
+							h3 Lorem ipsum dolor sit amet, consectetur.
+							p Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+							p Fsum dolor sit amet, consectetur adipisicing elit. Numquam, alias, deleniti, quas magnam error mollitia excepturi illo perspiciatis laboriosam maiores cupiditate incidunt dolorum ipsum minima esse ratione a eum expedita.
+						#tab-2011.tab-pane.fade
+							h3 Lorem ipsum dolor sit amet, consectetur.
+							p Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, hic, tempora ipsum deserunt id consectetur cupiditate incidunt rem doloribus explicabo dolores odit ullam tenetur voluptatibus ab. Et, ipsum, quae eos id reprehenderit at doloremque saepe accusamus nihil sapiente atque ad eveniet laborum corrupti aperiam molestiae animi illum similique mollitia consectetur nam impedit deserunt! Nostrum, vel laudantium ad optio assumenda necessitatibus odio dolorum blanditiis velit esse deserunt praesentium architecto quam nihil quae hic atque dicta enim temporibus harum dolorem provident minus ex iste beatae sint asperiores sit quibusdam dolore molestias ab accusamus similique dolor ducimus corporis alias accusantium mollitia maxime reiciendis.
+						#tab-2010.tab-pane.fade
+							h3 Solor sit amet, consectetur.
+							p Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, alias, deleniti, quas magnam error mollitia excepturi illo perspiciatis laboriosam maiores cupiditate incidunt dolorum ipsum minima esse ratione a eum expedita.
+				.divider
+
+				h3#alert Alerts or Message
+				.alert
+					button.close(
+						type="button"
+						data-dismiss="alert") x
+					strong Warning!
+					|  Best check yo self, you're not looking too good.
+				.alert.alert-error
+					button.close(
+						type="button"
+						data-dismiss="alert") x
+					strong Error!
+					|  Change a few things up and try submitting again.
+				.alert.alert-success
+					button.close(
+						type="button"
+						data-dismiss="alert") x
+					strong Success!
+					|  You successfully read this important alert message.
+				.alert.alert-info
+					button.close(
+						type="button"
+						data-dismiss="alert") x
+					strong Heads up!
+					|  This alert needs your attention, but it's not super important.
+				h5 and
+				p.message(data-type="info")
+					span.icon.icons-message-info
+					| 	Heads up! This alert needs your attention, but it's not super important.
+				p.message(data-type="warning")
+					span.icon.icons-message-warning
+					| 	Warning! Best check yo self, you're not looking too good.
+				p.message(data-type="error")
+					span.icon.icons-message-error
+					| 	Error! Change a few things up and try submitting again.
+				p.message(data-type="success")
+					span.icon.icons-message-success
+					| 	Success! You successfully read this important alert message.
+
+
+
+		include partials/footer

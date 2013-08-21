@@ -1,0 +1,133 @@
+
+
+<link rel="stylesheet" href="js/rs/css/settings.css">
+
+     <!-- Script  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="js/jquery-migrate-1.2.js"></script>
+<!--  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script> --> 
+    <script src="js/rs/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rs/js/jquery.themepunch.revolution.min.js"></script>
+
+
+</head>
+<body>
+    
+<section class="bannersection">
+<!-- THE BANNER CONTAINER -->
+<article id="fullwidthbanner-container ">
+<div id="rs_slider">
+    <ul>
+        <li data-transition="3dcurtain-vertical" data-slotamount="8" data-masterspeed="300">
+            <img src="assets/slides/bg_slider-blue.png" data-fullwidthcentering="on" alt="" />
+
+            <div class="tp-caption slide-title lfb" data-x="217" data-y="87" data-speed="800" data-start="800" data-easing="easeOutBack">WELCOME TO it!</div>
+
+            <div class="tp-caption slide1-paragraph lft" data-x="274" data-y="190" data-speed="600" data-start="1000" data-easing="easeOutBack">It is situates in the bay of Yeddo, and at but a short distance from that second<br />capital of the Japanese Empire, and the residence of the Tycoon, the civil</div>
+
+            <div class="tp-caption lfb" data-x="center" data-y="306" data-speed="450" data-start="1200" data-easing="easeOutBack"><button class='btn btnmc1 white'>Buy it Now !</button></div>
+        </li>
+
+        <li data-transition="papercut" data-slotamount="2" data-masterspeed="300">
+            <img src="assets/slides/bg_slider-default.png" data-fullwidthcentering="on" alt="" />
+
+            <div class="tp-caption slide2-title lfl" data-x="178" data-y="164" data-speed="500" data-start="800" data-easing="easeInExpo">it</div>
+
+                <div class="tp-caption slide2-paragraph lfl" data-x="178" data-y="248" data-speed="500" data-start="1100" data-easing="easeOutBack">It is situated in the bay of Yeddo, and at but a short distance from that<br />second capital of the Japanese Empire, and the residence of the Tycoon,<br />the civil Emperor, before the Mikado, the spiritual Emperor, absorbed.</div>
+
+                <div class="tp-caption lfl" data-x="178" data-y="328" data-speed="500" data-start="1400" data-easing="easeOutElastic"><button class='btn btnmc2 white'>Buy it Now !</button></div>
+
+                <div class="tp-caption sfl" data-x="639" data-y="-1" data-speed="400" data-start="1200" data-easing="easeOutSine"><img src="images/slides/slide2-girl.png" alt="Image 4" /></div>
+        </li>
+        <li data-transition="slideleft" data-slotamount="7" data-masterspeed="300">
+                <img src="assets/slides/bg_slider-yellow.png" data-fullwidthcentering="on" alt="" />
+
+                <div class="tp-caption slide3-title sft" data-x="100" data-y="100" data-speed="500" data-start="800" data-easing="easeOutExpo">it IS RESPONSIVE</div>
+
+                    <div class="tp-caption slide3-paragraph sfr" data-x="100" data-y="174" data-speed="500" data-start="1100" data-easing="easeOutExpo">It is situated in the bay of Yeddo, and a but a short<br />distance from that second capital of the Japenese Empire,<br />and  the residence of the Tycoon, the civil Emperor, before</div>
+
+                    <div class="tp-caption sfb" data-x="100" data-y="258" data-speed="500" data-start="1400" data-easing="easeOutExpo"><button class='btn btngray white'>Buy it Now !</button></div>
+
+                    <div class="tp-caption lfb" data-x="718" data-y="3" data-speed="800" data-start="1100" data-easing="easeOutExpo"><img src="images/slides/slide3-hand.png" alt="Image 4" /></div>
+
+            </li>
+
+
+    </ul>
+            <!-- <div class="tp-bannertimer"></div>-->
+        </div>
+
+
+   
+
+                        <!-- END REVOLUTION SLIDER -->
+
+</article><!-- END OF FULWIDTH BANNER -->
+</section> <!-- END OF FULLWIDTH CONTAINER -->
+
+
+
+
+<script>
+
+$('#rs_slider').revolution({
+    delay: 9000,
+    // The time one slide stays on the screen in Milliseconds (Default: 9000)
+    startheight: 512,
+    startwidth: 1170,
+    // Basic height, width of the Slider in the desktop resolution in pixel. If you use a fullwidth banner, it will deinfe the max height, width
+
+    hideThumbs: 200,
+    // Time after that the Thumbs will be hidden(Default: 200)
+    thumbWidth: 100,
+    thumbHeight: 50,
+    // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+    thumbAmount: 5,
+    navigationType: "bullet",
+    // bullet, thumb, none
+
+    navigationArrows: "verticalcentered",
+    // nexttobullets, solo (old name verticalcentered), none
+    navigationStyle: "round",
+    // round,square,navbar,round-old,square-old,navbar-old, custom...
+    navigationHAlign: "center",
+    // Vertical Align top,center,bottom
+    navigationVAlign: "bottom",
+    // Horizontal Align left,center,right
+    navigationHOffset: 0,
+    navigationVOffset: 20,
+    soloArrowLeftHalign: "left",
+    soloArrowLeftValign: "center",
+    soloArrowLeftHOffset: 20,
+    soloArrowLeftVOffset: 0,
+    soloArrowRightHalign: "right",
+    soloArrowRightValign: "center",
+    soloArrowRightHOffset: 20,
+    soloArrowRightVOffset: 0,
+    touchenabled: "on",
+    // Enable Swipe Function : on/off
+    onHoverStop: "on",
+    // Stop Banner Timet at Hover on Slide on/off
+    stopAtSlide: -1,
+    // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+    stopAfterLoops: -1,
+    // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+    hideCaptionAtLimit: 0,
+    // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+    hideAllCaptionAtLilmit: 0,
+    // Hide all The Captions if Width of Browser is less then this value
+    hideSliderAtLimit: 0,
+    // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+    shadow: 0,
+    //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+    fullWidth: "on" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+}); 
+
+
+</script>
+
+
+
+
+</body>
+</html>

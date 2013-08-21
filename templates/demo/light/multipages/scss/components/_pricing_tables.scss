@@ -1,0 +1,84 @@
+
+
+// share the button color scheme, 30+
+
+.pricing-table {
+
+	.span6,
+	.span5,
+	.span4,
+	.span3,
+	.span2 {
+		position: relative;
+		padding: 0;
+		margin-bottom: 2em;
+		border: 1px solid $color_border;
+		@include box-shadow( 0 0 15px rgba(0, 0, 0, .5) );
+		@include border-radius( 5px );
+
+		.plan {
+			text-align: center;
+			@include border-radius(5px);		
+
+			h3 {
+				margin-top: 0;
+				font-size: 20px;
+				font-weight: normal;
+				color: $color_sub;
+				letter-spacing: normal;
+				text-transform: uppercase;
+			}
+
+			p {
+				margin-bottom: 0;
+				letter-spacing: -5px;
+				font-size: 90px;
+				line-height: 95px;
+				text-shadow: 1px 1px rgba(255,255,255,.3);
+				font-family: $font_h;
+
+				span.dollar-sign {
+					font-size: 24px;
+					vertical-align: text-top;
+				}
+
+				span.per-month {
+					letter-spacing: 0;
+					font-size: 20px;
+					vertical-align: baseline;
+				}
+			}
+
+		}
+
+		ul.plan-features {
+			text-shadow: 1px 1px rgba(0, 0, 0, .3);
+			list-style: none;
+			margin: 0;
+
+			li:nth-child(odd) {
+				background-color: $color_li_odd; 
+			}
+
+			li {
+				border-bottom: 1px solid $color_li_border_bottom;
+				border-top: 1px solid $color_li_border_top;
+				font-size: 14px;
+				line-height: 42px;
+				padding-left: 10%;
+				background-color: $color_li;
+			}
+
+			a.btn {
+				text-align: center;
+				margin: 10px 10% 10px 0;
+				display: block;
+			}
+
+		}
+
+
+
+	}
+
+}

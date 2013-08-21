@@ -1,0 +1,697 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AppStyle 1.0\n"
+"POT-Creation-Date: 2013-02-24 18:49+0800\n"
+"PO-Revision-Date: 2013-02-24 18:52+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;_xe;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: E:\\xampp\\htdocs\\wordpress\\wp-content\\themes"
+"\\AppStyle\n"
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/404.php:16
+msgid "Oops! Page not found."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:22
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:25
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:32
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:40
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:43
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:46
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/archive.php:49
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/sidebar.php:18
+msgid "Archives"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:39
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:40
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:41
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-page.php:17
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:19
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:26
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:94
+msgid "Pages:"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-page.php:18
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:57
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:59
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:35
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:108
+msgid "Edit"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:25
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:28
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:34
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:44
+msgid ", "
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:33
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:35
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:41
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content-single.php:43
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:10
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:25
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:38
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:49
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:56
+msgid "Leave a comment"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:56
+msgid "1 Comment"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/content.php:56
+msgid "% Comments"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/footer.php:32
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/functions.php:87
+msgid "Primary Menu"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/functions.php:136
+msgid "Footer widget left"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/functions.php:145
+msgid "Footer widget right"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:24
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:39
+msgid "&larr; Previous"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:40
+msgid "Next &rarr;"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:100
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:102
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:104
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/image.php:106
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/page-faq.php:35
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/page-features.php:33
+msgid "Not Found"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/page-faq.php:36
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/page-features.php:34
+msgid "Sorry, Nothing created yet."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/searchform.php:10
+msgid "Search"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/sidebar.php:25
+msgid "Meta"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-colors.php:22
+msgid "H1~H6 Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-colors.php:43
+msgid "Content Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-colors.php:64
+msgid "Link Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-colors.php:85
+msgid "Link Hover Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:12
+msgid "Fonts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:28
+msgid "Line Height"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:47
+msgid "Headings Fonts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:77
+msgid "H1 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:94
+msgid "H2 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:111
+msgid "H3 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:128
+msgid "H4 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:145
+msgid "H5 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:162
+msgid "H6 Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:182
+msgid "Content Fonts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-fonts.php:212
+msgid "Content Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:25
+msgid "Show Site Title"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:42
+msgid "Site Title Fonts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:76
+msgid "Site Title Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:97
+msgid "Site Title Hover Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:115
+msgid "Header"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:128
+msgid "Favicon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:143
+msgid "Logo"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:159
+msgid "Show Logo"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:183
+msgid "Navigation Item Fonts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:214
+msgid "Navigation Item Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:236
+msgid "Navigation Item Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:257
+msgid "Navigation Item Hover Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-header.php:278
+msgid "Navigation Item Active Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:20
+msgid "Home Page"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:36
+msgid "Intro Heading"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:55
+msgid "Intro Heading Font"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:85
+msgid "Intro Heading Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:105
+msgid "Intro Heading Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:124
+msgid "Intro Sententce"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:143
+msgid "Intro Sententce Font"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:173
+msgid "Intro Sententce Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:193
+msgid "Intro Sententce Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:214
+msgid "Hide App Store Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:231
+msgid "App Store Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:247
+msgid "Hide Google Play Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:264
+msgid "Google Play Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:280
+msgid "Hide IOS Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:297
+msgid "IOS Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:313
+msgid "Hide Android Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:330
+msgid "Android Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:346
+msgid "Hide WinPhone Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:363
+msgid "WinPhone Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:379
+msgid "Hide OVI Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:396
+msgid "OVI Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:412
+msgid "Hide Blackberry Icon"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:429
+msgid "Blackberry Link"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:446
+msgid "FAQ Page"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:462
+msgid "FAQ Heading Text"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:481
+msgid "FAQ Question Font"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:511
+msgid "FAQ Font Size"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:531
+msgid "FAQ Question Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer-pages.php:552
+msgid "FAQ Question Hover, Acitve Color"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:41
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:42
+msgid "Customize"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:76
+msgid "Static Front Page"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:84
+msgid "Background Image"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:97
+msgid "Footer"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/customizer.php:113
+msgid "Copyright text"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/extras.php:75
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:19
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:31
+msgid "Slides"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:20
+msgid "Slide"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:21
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:22
+msgid "Add New Slide"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:23
+msgid "Edit Slide"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:24
+msgid "New Slide"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:25
+msgid "All Slides"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:26
+msgid "View Slide"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:27
+msgid "Search Slides"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:28
+msgid "No Slide found"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:29
+msgid "No Slide found in Trash"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:55
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:67
+msgid "Features"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:56
+msgid "Feature"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:57
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:58
+msgid "Add New Feature"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:59
+msgid "Edit Feature"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:60
+msgid "New Feature"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:61
+msgid "All Features"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:62
+msgid "View Feature"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:63
+msgid "Search Features"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:64
+msgid "No Feature Found"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:65
+msgid "No Feature found in Trash"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:91
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:103
+msgid "FAQ"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:92
+msgid "Question"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:93
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:94
+msgid "Add New Question"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:95
+msgid "Edit Question"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:96
+msgid "New Question"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:97
+msgid "All FAQ Questions"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:98
+msgid "View Question"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:99
+msgid "Search FAQ"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:100
+msgid "No FAQ found"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/post-types.php:101
+msgid "No FAQ found in Trash"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:39
+msgid "Post navigation"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:43
+msgid "&larr;"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:44
+msgid "&rarr;"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:49
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:53
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:78
+msgid "Pingback:"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:78
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:101
+msgid "(Edit)"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:88
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:91
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:99
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:126
+#, php-format
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by "
+"<span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s"
+"\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: E:\xampp\htdocs\wordpress\wp-content\themes\AppStyle/inc/template-tags.php:132
+#, php-format
+msgid "View all posts by %s"
+msgstr ""

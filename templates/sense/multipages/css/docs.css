@@ -1,0 +1,8 @@
+/* line 1, ../sass/docs.scss */
+.show-grid { margin-top: 10px; margin-bottom: 20px; }
+
+/* line 6, ../sass/docs.scss */
+.show-grid [class*="span"] { background-color: silver; border: 1px solid #fff; text-align: center; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; min-height: 40px; line-height: 40px; }
+
+/* line 19, ../sass/docs.scss */
+.icons-demo .icon { float: left; margin-right: 20px; }

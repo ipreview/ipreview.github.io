@@ -1,0 +1,199 @@
+extends layout
+
+block content
+	// banner
+	section.banner.clearfix
+		//- camera slider
+		.fluid_container
+			.camera_wrap.camera_emboss#camera_bg
+				div(data-src="assets/slides/01.jpg")
+				div(data-src="assets/slides/02.jpg")
+		.welcome
+			.container
+				.row
+					section.large-6.large-centered.columns.text-center
+						h1 COMING SOON!
+						p The site is almost done. Stay tuned!
+						form.subscribe-form(action="#", method="post")
+							input(type="email", placeholder="Enter your email here", required="required")
+							button(type="submit") Notify Me!
+	// end banner
+
+
+	// count down
+	section.count-container.colored
+		.row
+			.countdown.clearfix
+	// end coun down
+
+
+	// features section
+	section.features#features
+		.wrapper
+			.row
+				.large-4.columns
+					h3 Available on All Platforms
+					p Ut enim ad minim veniam, quis nostrud exercitation.
+					p Sed do eiusmod tempor incididunt ut labore et dolore.
+				.large-8.columns
+					img(alt="", src="assets/showcase/all-platforms.png")
+		.wrapper
+			.row
+				.large-4.push-8.columns
+					h3 Elegant Design
+					p Excepteur sint occaecat consectetur cupidatat non proident.				
+					p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.large-8.pull-4.columns
+					img(alt="", src="assets/showcase/elegant-design.png")
+		.wrapper
+			.row
+				.large-4.columns
+					h3 Powerful Dashboard
+					p Asint occaecat cupidatat non proident, sunt in culpa qui officia.
+					p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.large-8.columns
+					img(alt="", src="assets/showcase/powerful-dashboard.png")
+		// Showcase
+		//- section.showcase#showcase
+		.wrapper
+			.container
+				#showcase_container
+					// THE ENTRIES
+					.showbiz
+						// THE OVERFLOW HOLDER CONTAINER, DONT REMOVE IT !!
+						.overflowholder
+							// LIST OF THE ENTRIES
+							ul
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/1.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a(href="#")
+												.linkicon.notalone
+													i.icon-link
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/1.jpg")
+												.lupeicon.notalone
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Touch Optimized
+										p Excepteur sint occaecat consectetur cupidatat non proident.				
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/2.jpg")
+												
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/2.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Drag to Scroll
+										p Asint occaecat cupidatat non proident, sunt in culpa qui officia.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/3.jpg")
+												
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/3.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Fully Responsive
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/4.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/4.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Magic Effects
+										p Ut enim ad minim veniam, quis nostrud exercitation.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/5.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/5.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 And Much More
+										p Tempor incididunt ut labore et dolore magna aliqua.
+	// end features section
+
+
+	// about section
+	section.about.colored#about
+		.row
+			.large-12.columns
+				h2.text-center About Us
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	// end about section
+
+
+	// contact section
+	section.contact#contact
+		// gmap
+		h2.text-center Contact
+		.contact-info.text-center
+			p
+				i.icon.icon-phone 
+				| +123 456 789 
+			p
+				i.icon.icon-envelope 
+				| mail@yourmail.com
+			p
+				i.icon.icon-map-marker 
+				| Street 123, Avenue 45, Country
+			p
+				i.icon.icon-globe 
+				| www.yoursite.com
+		#gmap
+	// end contact section

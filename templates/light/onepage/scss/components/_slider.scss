@@ -1,0 +1,82 @@
+
+/*==========  flexslider, banner  ==========*/
+// overwrite the flexslider
+.flex-control-paging li a.flex-active {
+	background: $color_fallback;
+	background: $color_main;
+}
+
+.banner {
+	position: relative;
+	margin: 0 0 2em;
+	background: image-url($bg_slider) repeat-x top center ;
+	background-color: $color_element_bg;
+	height: 512px;
+	@include box-shadow( 0 0 1em rgba(0,0,0,.5) );
+	text-align: center;
+	overflow: hidden; // fix a "horizontal scroll bar show" problem
+
+	// overwrite flexslider
+	.flexslider .slides img {
+		width: auto;
+	}
+
+	.flexslider-banner + ul {
+		height: 512px;
+		position: relative;
+		text-align: center;
+		padding: 10px;
+	}
+
+	li {
+
+		h1 {
+			font-size: 60px;
+			line-height: 90px;
+			color: $color_fallback;
+			color: $color_main; 
+			font-weight: normal;
+		}
+
+		p {
+			color: $color_unactive;
+			font-size: 18px;
+		}
+
+		& > img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+}
+
+
+/*==========  camera slider  ==========*/
+.fluid_container {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*==========  revolution slider  ==========*/
+.revolution-container {
+	width: 100% !important;
+	position: relative;
+	padding: 0;
+	max-height: 460px !important;
+	overflow: hidden;
+	font-family: $font_h;
+
+	i {
+		font-family: $font_italic;
+	}
+}
+
+.caption.huge{
+	font-size: 60px;
+}
+
+.caption.big {
+	font-size: 40px;
+}

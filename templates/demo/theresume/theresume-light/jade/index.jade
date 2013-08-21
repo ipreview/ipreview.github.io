@@ -1,0 +1,257 @@
+extends layout
+
+block content
+	// about
+	section.about#about
+		.container
+			h1 LISA ANDERSON
+			p Designer and Developer
+			.profile
+				img(alt="", src="assets/profile.jpg")
+			ul.info.inline-list
+				li
+					i.icon-phone 
+					|  +123 456 789 
+				li
+					i.icon-envelope 
+					|  mail@yourmail.com
+				li
+					i.icon-map-marker 
+					|  Street 123, Avenue 45, Country
+				li
+					i.icon-globe 
+					|  www.yoursite.com
+			ul.social.inline-list
+				li
+					a(href="")
+						i.icon-github
+				li
+					a(href="")
+						i.icon-facebook
+				li
+					a(href="")
+						i.icon-twitter
+				li
+					a(href="")
+						i.icon-linkedin
+				li
+					a(href="")
+						i.icon-google-plus
+				li
+					a(href="")
+						i.icon-pinterest
+	// end about
+
+	.main-content
+		// experience section
+		section.timeline.light.container.clearfix
+			.tl-separator#experience
+				h3 [ EXPERIENCE ]
+			article.odd
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Job Title
+								|  @ Company Name
+						.small-4.columns
+							p 2012 - 2013
+				.tl-content
+					p Lorem ipsum dolor sit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+				.tl-footer
+					p Skill: HTML, CSS, JavaScript
+			article.even
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Job Title
+								|  @ Company Name
+						.small-4.columns
+							p 2011 - 2012
+				.tl-content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.tl-footer
+					p Skill: HTML, CSS, JavaScript
+			.clearfix
+			article.odd
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Job Title
+								|  @ Company Name
+						.small-4.columns
+							p 2010 - 2011
+				.tl-content
+					p Vonsectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.tl-footer
+					p Skill: HTML, CSS, JavaScript
+			article.even
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Job Title
+								|  @ Company Name
+						.small-4.columns
+							p 2009 - 2010
+				.tl-content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.tl-footer
+					p Skill: HTML, CSS, JavaScript
+			.clearfix
+			.tl-separator#education
+				h3 [ EDUCATION ]
+			article.odd
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Degree or Specialty
+								|  @ University
+						.small-4.columns
+							p 2007 - 2009
+				.tl-content
+					p Vonsectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.tl-footer
+					p Major: HTML, CSS, JavaScript
+			article.even
+				span.point
+				.tl-header
+					.row
+						.small-8.columns
+							p 
+								span.colored Degree or Specialty
+								|  @ University						.small-4.columns
+							p 2003 - 2007
+				.tl-content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.tl-footer
+					p Major: HTML, CSS, JavaScript
+			.clearfix
+		// end experience section
+
+
+		// portfolio section
+		section.portfolio#portfolio
+			.container
+				h3.text-center [ Portfolio ]
+				#showcase_container
+					// THE ENTRIES
+					.showbiz
+						// THE OVERFLOW HOLDER CONTAINER, DONT REMOVE IT !!
+						.overflowholder
+							// LIST OF THE ENTRIES
+							ul
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/1.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a(href="#")
+												.linkicon.notalone
+													i.icon-link
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/1.jpg")
+												.lupeicon.notalone
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Touch Optimized
+										p Excepteur sint occaecat consectetur cupidatat non proident.				
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/2.jpg")
+												
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/2.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Drag to Scroll
+										p Asint occaecat cupidatat non proident, sunt in culpa qui officia.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/3.jpg")
+												
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/3.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Fully Responsive
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/4.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/4.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 Lightbox Effect
+										p Ut enim ad minim veniam, quis nostrud exercitation.
+
+								li.sb-grey-skin.text-center
+									
+									// THE MEDIAHOLDER CONTAINER
+									.mediaholder
+
+										// THE INNER WRAP FOR MEDIA HOLDER
+										.mediaholder_innerwrap
+											img(alt="", src="assets/showcase/5.jpg")
+
+										// THE HOVER CONTAINER AND THE HOVER ICONS
+										.hovercover
+											a.fancybox(data-fancybox-group="group", href="assets/showcase/5.jpg")
+												.lupeicon
+													i.icon-search
+
+									// THE VISIBLE DETAILS
+									.detailholder
+										h4 And Much More
+										p Tempor incididunt ut labore et dolore magna aliqua.
+		// end portfolio section
+
+

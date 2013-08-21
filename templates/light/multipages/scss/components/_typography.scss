@@ -1,0 +1,155 @@
+
+// blockquote
+blockquote {
+	border-left: 5px solid $color_fallback;
+	border-left: 5px solid $color_main;
+}
+
+blockquote.pull-right {
+	border-right: 5px solid $color_fallback;
+	border-right: 5px solid $color_main;
+}
+
+
+// =Dropcap
+.dropcap,
+.dropcap-square,
+.dropcap-circle {
+	display: block;
+	float: left;
+	font-weight: normal;
+	line-height: 36px;
+	margin-right: 6px;
+	text-shadow: none;	
+}
+
+.dropcap {
+	font-size: 3.1em;
+}
+
+.dropcap-square,
+.dropcap-circle {
+	background-color: #444;
+	color: #fff;
+	width: 36px;
+	text-align: center;
+}
+
+.dropcap-square {
+	font-size: 2.3em;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.dropcap-circle {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;	
+	font-size: 1.78em;
+}
+
+.dropcap.colored {
+	color: $color_fallback;
+	color: $color_main;
+}
+
+.dropcap-square.colored,
+.dropcap-circle.colored {
+	background-color: $color_fallback;
+	background-color: $color_main;
+}
+
+// =Highlight
+.highlight {
+	background-color: $color_fallback;
+	background-color: $color_main;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0 3px;
+	font-weight: normal;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+}
+
+
+// for ordinary list
+ul.ul-brown {
+	list-style-image: image-url('list-bullets/bullet-brown.png');
+}
+
+ul.ul-green {
+	list-style-image: image-url('list-bullets/bullet-green.png');
+}
+
+ul.ul-orange {
+	list-style-image: image-url('list-bullets/bullet-orange.png');
+}
+
+ul.ul-sandal {
+	list-style-image: image-url('list-bullets/bullet-sandal.png');
+}
+
+// check list
+ul.ul-check-dark {
+	list-style-image: image-url('list-bullets/bullet_check-dark.png');
+}
+
+ul.ul-check-autumn {
+	list-style-image: image-url('list-bullets/bullet_check-autumn.png');
+}
+
+ul.ul-check-pink {
+	list-style-image: image-url('list-bullets/bullet_check-pink.png');
+}
+
+ul.ul-check-purple {
+	list-style-image: image-url('list-bullets/bullet_check-purple.png');
+}
+
+ul.ul-check-cherry {
+	list-style-image: image-url('list-bullets/bullet_check-cherry.png');
+}
+
+ul.ul-check-coffee {
+	list-style-image: image-url('list-bullets/bullet_check-coffee.png');
+}
+
+ul.ul-check-cool-blue {
+	list-style-image: image-url('list-bullets/bullet_check-cool-blue.png');
+}
+
+ul.ul-check-fire {
+	list-style-image: image-url('list-bullets/bullet_check-fire.png');
+}
+
+ul.ul-check-forest-green {
+	list-style-image: image-url('list-bullets/bullet_check-forest-green.png');
+}
+
+ul.ul-check-golden {
+	list-style-image: image-url('list-bullets/bullet_check-golden.png');
+}
+
+ul.ul-check-lime-green {
+	list-style-image: image-url('list-bullets/bullet_check-lime-green.png');
+}
+
+ul.ul-check-periwinkle {
+	list-style-image: image-url('list-bullets/bullet_check-periwinkle.png');
+}
+
+ul.ul-check-royal-blue {
+	list-style-image: image-url('list-bullets/bullet_check-royal-blue.png');
+}
+
+ul.ul-check-sky-blue {
+	list-style-image: image-url('list-bullets/bullet_check-sky-blue.png');
+}
+
+ul.ul-check-violet {
+	list-style-image: image-url('list-bullets/bullet_check-violet.png');
+}

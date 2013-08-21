@@ -1,0 +1,23 @@
+.lt-ie9 .flexnav .touch-button { display: none; }
+
+.lt-ie9 .flexnav { overflow: visible; }
+
+.lt-ie9 .flexnav li { position: relative; list-style: none; float: left; display: block; width: 20%; overflow: visible; }
+
+.lt-ie9 .flexnav li a { border-left: 1px dash #333333; border-bottom: none; }
+
+.lt-ie9 .flexnav li > ul { position: absolute; top: 100%; left: 0; display: block; }
+
+.lt-ie9 .flexnav li > ul li { width: 100%; }
+
+.lt-ie9 .flexnav li ul li > ul { margin-left: 100%; top: 0; }
+
+.lt-ie9 .flexnav li ul li a { border-bottom: none; }
+
+.lt-ie9 .flexnav li ul.open { display: block; opacity: 1; visibility: visible; z-index: 1; }
+
+.lt-ie9 .flexnav li ul.open li { overflow: visible; max-height: 100px; }
+
+.lt-ie9 .flexnav li ul.open ul.open { margin-left: 100%; top: 0; }
+
+.lt-ie9 .menu-button { display: none; }

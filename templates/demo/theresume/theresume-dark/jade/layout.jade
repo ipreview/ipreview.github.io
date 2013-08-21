@@ -1,0 +1,179 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// if lt IE 9
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+			link(href="css/ie8-grid-foundation-4.css", rel="stylesheet")
+
+		// ==========  stylesheets  ==========
+		block stylesheets
+			link(href="css/foundation.css", rel="stylesheet")
+
+			link(href="css/font-awesome.min.css", rel="stylesheet")
+			// showbiz pro stylesheet
+			link(rel='stylesheet', href='js/vendor/showbizpro/css/settings.css')
+			// fancybox stylesheet
+			link(rel='stylesheet', href='js/vendor/showbizpro/fancybox/jquery.fancybox.css')
+			// google fonts
+			link(href='http://fonts.googleapis.com/css?family=Lato|Open+Sans', rel='stylesheet', type='text/css')
+			// main stylesheet
+			link(href="css/main.css", rel="stylesheet")
+
+			// jQuery and migrate.js
+			script
+				window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+				//- document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto.min' : 'js/vendor/jquery.min') + '.js><\/script>')
+			script(src="js/vendor/jquery-migrate-1.2.1.min.js")
+
+			// Basic ThemePunch Plugin Helpers
+			script(src='js/vendor/showbizpro/js/jquery.themepunch.plugins.min.js') 
+
+			// script
+			script(src="js/vendor/custom.modernizr.js")
+
+	
+	body
+
+		// Header
+		Header.header-wrapper
+			.header
+				.inner
+					// Navbar
+					block nav
+						.row
+							.large-4.columns
+								.logo
+									h2 THE
+										span.colored RESUME
+							.large-6.large-offset-2.columns
+								ul.inline-list#nav
+									li
+										a(href="#experience") Experience
+									li
+										a(href="#education") Education
+									li
+										a(href="#portfolio") Portfolio
+									li
+										a(href="#skills") Skills
+				// color schemes
+				ul.colors.inline-list
+					li(data-color='purple')
+					li(data-color='green')
+					li(data-color='turquoise')
+					li(data-color='forest-green')
+					li(data-color='blue')
+					li(data-color='baby-blue')
+					li(data-color='navy-blue')
+					li(data-color='rose')
+					li(data-color='red')
+					li(data-color='maroon')
+					li(data-color='yellow')
+					li(data-color='olive')
+					li(data-color='coffee')
+					li(data-color='pink')
+					li(data-color='orange')
+					li(data-color='grey')
+
+		// Main Content
+		block content
+
+
+		// Footer
+		block footer
+			footer.footer#skills
+				.row
+					// skills
+					.large-7.columns
+						h3 [ SKILLS ]
+						.row
+							.large-6.small-6.columns
+								h4 Professional
+								.skill
+									p Adobe Creative Suite
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.off
+										li.off
+								.skill
+									p HTML/CSS
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.on
+										li.off
+								.skill
+									p JavaScript
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.on
+										li.off
+							.large-6.small-6.columns
+								h4 Personal
+								.skill
+									p Communication
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.on
+										li.off
+								.skill
+									p Management
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.off
+										li.off
+								.skill
+									p Teamplayer
+									ul.rate.inline-list
+										li.on
+										li.on
+										li.on
+										li.on
+										li.off
+					// awards and certification
+					.large-5.columns
+						h3 [ WHY ME? ]
+						p Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						p Consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						p Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		// ==========  Scripts  ==========
+		block scripts
+
+			// showbiz pro script
+			script(src='js/vendor/showbizpro/js/jquery.themepunch.showbizpro.min.js') 
+			// fancy box script
+			script(src='js/vendor/showbizpro/fancybox/jquery.fancybox.pack.js') 
+			// smooth scroll
+			script(src='js/jquery.smooth-scroll.js')
+			//- // foundation
+			//- script(src="js/foundation.min.js")
+			// custom script
+			script(src="js/main.js")
+
+
+
+

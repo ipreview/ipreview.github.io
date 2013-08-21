@@ -1,0 +1,46 @@
+
+// for these use isotope, like blog, portofolio
+
+
+// fix ie8 isotope filtering issue, or ie8 will mess up
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	// pointer-events: none; // not W3C validate, Property pointer-events doesn't exist : none
+	z-index: 1;
+}
+
+// isotope items
+.post-isotope {
+	float: left; // necessary for isotope
+	// overflow: hidden; //if true, the nice four shine corner will gone
+}
+
+// isotope filter style
+.filters-container{
+	background: #393939;
+	@include box-shadow( 0px 0px 15px rgba(0, 0, 0, 0.25) inset, 0px 0px 5px rgba(0, 0, 0, 0.25) );
+}
+
+ul.items-filters {
+	margin: 0;
+	padding: 0 30px;
+	list-style: none;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+
+	li {
+		float: left;
+		padding: 0 2%;
+		line-height: 36px;
+		cursor: pointer;
+
+		&.active {
+			color: $color_fallback;
+			color: $color_main;
+		}
+	}
+}

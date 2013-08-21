@@ -1,0 +1,43 @@
+// global
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font_h;
+	color: $color_fallback;
+	color: $color_main;
+	font-weight: normal;
+}
+
+body {
+	// background:  image-url("bg-dark/bg-dark22.png") repeat;
+	background-color: #4c4c4c;
+	color: $color_content;
+}
+
+
+a {
+	color: $color_fallback;
+	color: $color_main;
+
+	&:hover {
+		color: $color_fallback;
+		color: $color_main;
+	}
+}
+
+.colored {
+	color: $color_main;
+}
+
+
+::selection {
+	background: $color_fallback;
+	background: $color_main;
+	color: #fff;
+}
+
+// =Align
+img.alignright { float:right; margin:0 0 1em 1em}
+img.alignleft { float:left; margin:0 1em 1em 0}
+img.aligncenter { display: block; margin-left: auto; margin-right: auto}
+a img.alignright { float:right; margin:0 0 1em 1em}
+a img.alignleft { float:left; margin:0 1em 1em 0}
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto}

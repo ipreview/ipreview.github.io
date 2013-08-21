@@ -1,0 +1,129 @@
+// build on Bootstrap Tab
+
+// Horizontal tab
+.tab-horizontal{
+
+	ul.nav-tabs {
+		margin-bottom: 0;
+		border-bottom: 1px solid $color_unactive; //#d1d1d1
+
+		& > li {
+
+			&.active > a,
+			&.active > a:hover {
+				background-color: $color_element_bg;
+				border: 1px solid $color_unactive;
+				border-bottom: 1px solid $color_element_bg; //#f5f5f5
+				border-top: 3px solid $color_fallback;
+				border-top: 3px solid $color_main;
+			}
+
+			& > a {
+				@include border-radius( 0 );
+				color: $color_sub;
+				border: 1px solid $color_unactive; //#d1d1d1
+				border-top: 3px solid $color_unactive;
+
+				&:hover {
+					color: $color_fallback;
+					color: $color_main;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		padding: 1em;
+		background-color: $color_element_bg;
+		border: 1px solid $color_unactive;
+		border-top: 0;
+	}
+
+}
+
+// vertical tab
+.tab-vertical {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	border: 1px solid $color_unactive;
+	background: $color_element_bg;
+	@include box-shadow( 0 0 5px rgba(0, 0, 0, .1) );
+
+	.tabs-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 23.404255319148934%; //1200 * 23.404255319148934% (span3) 
+		height: 100%;
+		// border-right: 1px solid $color_unactive;
+		background: $color_element_bg;
+	}
+
+	ul.nav-tabs {
+		@include box-sizing( border-box );
+		margin-left: 0;
+		margin-bottom: 0;
+		width: 23.404255319148934%; //
+		float: left;
+		position: relative;
+		border-bottom: 0; // overwrite Bootstrap
+
+		& > li {
+			float: none;
+			width: 100%;
+			overflow: hidden;
+			margin: 0 -1px 0 0;
+			@include box-sizing( border-box );
+			border-right: 1px solid $color_unactive;
+			border-top: 1px solid $color_unactive;
+			border-bottom: 1px solid $color_unactive;
+			@include border-radius( 0 );
+
+			&:first-child {
+				border-top: none;
+			}
+
+			a {
+				height: 100%;
+				width: 100%; //
+				display: block;
+				text-decoration: none;
+				color: $color_sub;
+				border: 1px solid transparent;
+
+				&:hover {
+					background-color: transparent;
+					color: $color_fallback;
+					color: $color_main;
+					border: 1px solid transparent;
+
+				}
+			}
+
+			&.active {
+				background-position: 0 0 !important;
+				border-left: 3px solid $color_fallback;
+				border-left: 3px solid $color_main;
+				background-color: $color_element_bg;
+				border-right: 1px solid $color_element_bg;
+
+				a {
+					color: $color_fallback;
+					color: $color_main;
+					background-color: transparent;
+					border: 1px solid transparent;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		@include box-sizing(border-box);
+		float: left;
+		width: 74.46808510638297%;
+		padding: 1% 1%;
+	}
+
+}

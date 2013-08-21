@@ -1,0 +1,498 @@
+// for header, footer, nav, divider...general page elements
+
+// overwrite bootstrap
+body {
+	padding: 0 0 50px; // bottom padding for fixed footer
+}
+
+@media (max-width: 767px) {
+	body {
+		padding: 0 0 82px;
+	}	
+
+	.container {
+		margin: 0 20px; 
+	}	
+
+	.flexnav-container .container{
+		margin: 0;
+	}
+}
+
+
+
+// =logo
+.logo {
+	background-color: #202020;
+	padding: 5px 0;
+
+	img {
+		display: block;
+		width: 141px;
+		margin: 0 auto;
+	}
+}
+
+
+/* Flexnav Base Styles */
+
+$nav_text: $color_content ; //#222 $color_text_sub
+$top_level: #333; // #a6a6a2
+$border-left: #333;
+$border-top_fallback: #333;
+$border-top: rgba(0, 0, 0, .7); // #333
+$second_level_fallback: #333; // #b2b2af; 
+$second_level: rgba(0, 0, 0, .5); 
+$third_level_fallback: #333; // #bfbfbc;
+$third_level: rgba(0, 0, 0, .6);
+$touch_button: rgba(0, 0, 0, 0); //rgba(0, 0, 0, 0.075)
+
+
+.flexnav {
+	@include transition(.3s);
+	-webkit-transform-style: preserve-3d; // stop webkit flicker
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 0;
+
+	&.show {
+		max-height: 2000px;
+		@include transition(1s);
+	}
+	
+	& > li {
+		box-sizing: border-box;
+		margin: 0;
+		font-size: 14px;
+		padding: 7px 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	li {
+		white-space: normal;
+	}
+
+	li {
+
+		a {
+			position: relative;
+			display: block;
+			padding: 7px 0;
+			z-index: 2;
+			// overflow: hidden;
+			color: $nav_text;
+			text-decoration: none;			
+		}
+
+		&:hover > a,
+		&.active > a{
+			text-decoration: none;
+			color: $color_fallback;
+			color: $color_main;
+		}
+
+	}
+
+	// overwrite the style above for first level li
+	& > li > a {
+		padding: 7px 10px;
+	}
+
+	li ul {
+		z-index: 10001; //over isotope
+		display: block;
+		margin: 0;
+		width: 100%;
+		border: 1px solid #000;
+		border-top: 3px solid $border_top_fallback;
+		border-top: 3px solid $border_top; // since li has border-top
+		background-color: $second_level_fallback;
+		background-color: $second_level;
+		// overflow: auto;  // allow li's to overflow
+
+		// overwrite .navicon position on sub ul
+		.touch-button .navicon {
+			position: relative;
+			top: 8px;
+			font-size: 14px;
+			color: #666;				
+		}	
+		
+		li {
+			box-sizing: border-box;
+			// margin: 0 5px;
+			padding: 0 10px;
+			font-size: 14px;
+			position: relative;
+			overflow: hidden;	
+
+			a {
+				border-top: 1px solid $border-top_fallback;
+				border-top: 1px solid $border-top;
+			}
+
+			&:first-child a {
+				border-top: 0;
+			}
+
+
+		}
+
+		// 
+
+	}
+
+	li ul.show {
+		
+		li {
+			overflow: visible;
+		}
+	}	
+	
+	ul li ul{
+		background: $third_level_fallback;
+		background: $third_level;
+	}
+
+	.touch-button {
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		right: 0;
+		width: 48px;
+		height: 48px;
+		display: inline-block;
+		background: #acaca1;
+		background: $touch_button;
+		text-align: center;
+		&:hover {
+			cursor: pointer;
+		}
+		.navicon {
+			position: relative;
+			top: 1em;
+			font-size: 14px;
+			color: #666;
+		}
+	}
+}
+
+.menu-button {
+	position: relative;
+	display: block;
+	padding: 1em;
+	background: $top_level;
+	color: $nav_text;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	
+	.touch-button {
+		background: transparent;
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		right: 0;
+		width: 48px;
+		height: 48px;
+		display: inline-block;
+		text-align: center;
+				
+		.navicon {
+			font-size: 14px; //16
+			position: relative;
+			top: 1em;
+			color: #666;
+		}
+	}
+}
+
+
+
+@media all and (min-width: 800px) {
+	.flexnav {
+		overflow: visible;
+				
+		li {
+			position: relative;
+			list-style: none;
+			float: left;
+			display: block;	
+			width: 20%;
+			overflow: visible;
+		}
+		li a {
+			// border-left: 1px dashed $border-left;
+			border-bottom: none;
+		}
+		li > ul {
+			position: absolute; 
+			top: 100%;
+			left: 0;
+			display: block;
+			
+			li {
+				width: 100%;
+			}
+		}
+		li ul li > ul {
+			margin-left: 100%;
+			top: 0;
+		}
+		li ul li:hover > ul,
+		li ul li > ul.show {
+		}		
+		li ul li a {
+			border-bottom: none;
+		}
+		li ul.open {
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			z-index: 1;
+			
+			li {
+				overflow: visible;
+				max-height: 100px;
+			}	
+			ul.open {
+				margin-left: 100%;
+				top: 0;
+			}
+		}
+	}
+	.menu-button {
+		display: none;
+	}
+}
+
+.oldie {
+	.navicon {
+		display: none;
+	}
+
+	.flexnav {
+		overflow: visible;
+				
+		&.one-page {
+			top: 0;
+			right: auto;
+			max-width: 1080px;
+		}
+		li {
+			position: relative;
+			list-style: none;
+			float: left;
+			display: block;	
+			background-color: #a6a6a2;	
+			width: 20%;
+			min-height: 50px;
+		}
+		li:hover > ul { 
+			visibility: visible;
+			opacity: 1;
+			height: auto;
+			display: block;
+			position: absolute;
+			
+			li {
+				width: 100%;
+				float: none;
+			}
+		}
+		li a {
+			border-left: 1px solid #acaca1;
+			border-bottom: none;		
+		}
+		li > ul {
+			position: absolute; 
+			top: auto;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			height: 1px;
+			z-index: 1;	
+		}
+		li ul li ul { 
+			top: 0;		
+		}
+		li ul li a {
+			border-bottom: none;
+		}
+		li ul.open {
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			height: auto;
+	
+			ul.open {
+				margin-left: 100%;
+				top: 0;
+			}
+		}
+		ul li:hover ul {
+			margin-left: 100%;
+			top: 0;
+		}
+	}
+	.menu-button {
+		display: none;
+	}
+	&.ie7 .flexnav li {
+		width: 19.9%;
+	}
+}
+
+
+//add to flexnav, though i changed source code too ------------------------------------------------------------------------/
+.flexnav a.active {
+	color: $color_main;
+}
+
+.flexnav-container,
+.flexnav-container .menu-button{
+	background: $top_level image-url('bg-nav_gradient.png') repeat-x;
+}
+
+.flexnav-container {
+	position: relative; // add this in order to make z-index work.
+	z-index: 1001; // fix menu displaying behind image content
+	border-top: 1px solid #292929;
+	border-bottom: 1px solid #292929;
+}
+
+@media all and (max-width: 800px) {
+	.flexnav > li {
+		border-bottom: 1px solid #292929;
+	}
+}
+
+
+// content
+.main-content {
+	margin: 25px 0 50px;
+}
+
+.main-content,
+.content_wrapper {
+	opacity: 0;
+}
+
+#loading {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -15px 0 0 -15px;
+	display: block;
+	opacity: 0.5;
+}
+
+// back to top, scroll up
+.icons-go-top {
+	z-index: 1010;
+	position: fixed;
+	right: 50%;
+	bottom: 14px;
+	margin-right: -12px;
+	display: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 767px) {
+	.icons-go-top {
+		right: 10%;
+		bottom: 29px;
+	}
+}
+
+// iframe
+iframe {
+	border: none; // since 'frameborder="0"' is invalidate
+}
+
+
+// footer
+.footer {
+	z-index: 1001;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 0 5px; 
+	background-color: #333;
+	background-color: rgba(0, 0, 0, .6);
+	border: 1px solid #292929;
+
+	ul.social-icons {
+		margin: 0;
+		height: 20px;
+		list-style: none;
+
+		li {
+			width: 20px;
+			float: left; // inline-block not work well in IE8
+			// display: inline-block;
+			margin-right: 10px;
+		}
+	}
+
+	p.copyright {
+		text-align: right;
+		margin: 0;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.footer {
+		ul.social-icons,
+		p.copyright {
+			text-align: center;
+		}
+
+		ul.social-icons li {
+			float: none;
+			display: inline-block;
+		}
+	}
+
+}
+
+/*================================
+=            404 page            =
+================================*/
+.center.error404 {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	width: 40%;
+	text-align: center;	
+	color: #000;
+
+	h1 {
+		color: #000;
+		font-family: $font_content;
+		font-size: 150px;
+		font-weight: bold;
+		line-height: 150px;
+		@include text-shadow( 0 -1px 0 rgba(0, 0, 0, .8) );
+	}
+
+	h2 {
+		color: #000;
+		font-family: $font_content;
+	}
+}
+
+
+/*-----  End of 404 page  ------*/
+
+
+

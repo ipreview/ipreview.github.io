@@ -1,0 +1,74 @@
+// Not build on bootstrap, Collapse, since it's too complicated
+ul.toggler {
+	list-style: none;
+
+	& > li {
+		margin-bottom: 1em;
+
+		.toggler-heading {
+			position:relative;
+			background-color: $color_element_bg;
+			border-left: 3px solid $color_fallback;		
+			border-left: 3px solid $color_main;			
+			padding: .5em 0 .5em 6%; 	
+
+			p {
+				margin-bottom: 0;
+			}
+
+			i.icon-plus-sign {
+				position: absolute;
+				top: 10px;
+				left: 1%;
+				@include transition( all 0.35s ease-in-out );	
+			}
+
+			i.icon-circle-arrow-right {
+				position: absolute;
+				top: 10px; //(34 - 14) / 2 = 10px 
+				right: 5%;
+				@include transition( all 0.35s ease-in-out );	
+			}
+		}
+
+		.toggler-body {
+			padding: 1% 5% 1% 6%; 	
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			.toggler-heading p {
+				color: $color_fallback;
+				color: $color_main;
+			}
+		}
+
+		&.active {
+
+			.toggler-heading {
+				p {
+					color: $color_fallback;
+					color: $color_main;
+				}
+
+				i.icon-plus-sign {
+					@include transform( rotate(135deg) );
+					color: $color_fallback;
+					color: $color_main;				
+				}
+
+				i.icon-circle-arrow-right {
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					@include transform( rotate(90deg) );
+					color: $color_fallback;
+					color: $color_main;				
+				}
+
+			}
+		}
+
+	}
+}

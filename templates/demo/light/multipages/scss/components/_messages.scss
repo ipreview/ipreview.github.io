@@ -1,0 +1,55 @@
+
+
+.message {
+	border: 1px solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1) inset;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1) inset;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1) inset;
+
+	background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 70%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 70%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 70%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 70%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 70%);
+	background-repeat: repeat-x;
+
+	position: relative;
+	padding: 8px 3em;
+	font-size: 15px;
+	line-height: 22px;
+
+	& > span.icon {
+		display: block;
+		position: absolute;
+		left: 1em;
+		top: 8px;
+	}
+}
+
+.message[data-type="info"] {
+	border-color: #6f94db;
+	color: #0c46af;
+	background-color: #bfd4f5;
+}
+
+.message[data-type="warning"] {
+	border-color: #d19b41;
+	color: #70511e;
+	background-color: #f4e8b9;
+}
+
+.message[data-type="error"] {
+	border-color: #e66571;
+	color: #b9001e;
+	background-color: #f3d1cd;
+}
+
+.message[data-type="success"] {
+	border-color: #71bd43;
+	color: #195200;
+	background-color: #ceec9e;
+}

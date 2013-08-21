@@ -1,0 +1,41 @@
+
+
+// remove flexslider's default style
+.flexslider {
+	background: none;
+	border: none;
+	@include box-shadow(none);
+}
+
+.testimonials {
+	li {
+		text-align: center;
+
+		.icons-quote {
+			margin: 0 auto;
+		}
+		
+		.blockquote-wrapper {
+			display: block;
+			padding: 0 10%;
+			margin-bottom: 10px;
+		}
+		blockquote {
+			max-width: 780px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.info {
+			color: $color_sub;
+
+			strong {
+				color: $color_fallback;
+				color: $color_main;
+				font-family: $font_h;
+				font-size: 22px;
+			}
+		}
+
+	}	
+}

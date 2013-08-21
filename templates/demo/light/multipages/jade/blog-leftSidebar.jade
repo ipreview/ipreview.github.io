@@ -1,0 +1,209 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+
+	body
+		include partials/header
+		.main-content
+			.blog
+				.container
+					.row-fluid
+						.span4.widget-area#left_sidebar
+							form.form(action="#", method="post")
+								input(type="text", name="search-t-i", id="search-t-i", placeholder="Search...")
+								button(type="submit")
+									i.icon-search
+							h3 Tags
+							.tagcloud
+								a(href="#") ipsum
+								a(href="#") dolor
+								a(href="#") amet
+								a(href="#") consectetur
+								a(href="#") sit
+								a(href="#") adipisicing
+								a(href="#") ipsum
+								a(href="#") submit
+								a(href="#") consectetur
+								a(href="#") sit
+								a(href="#") adipisicing
+								a(href="#") ipsum
+								a(href="#") dolor sit
+								a(href="#") ipsum
+								a(href="#") elit
+								a(href="#") dolor sit
+								a(href="#") ipsum
+							.divider
+							h3 Categories
+							ul.ul-sandal.widget-categories
+								li
+									a(href="#") Web Design
+								li
+									a(href="#") Web Development
+								li
+									a(href="#") JavaScript / Node.js
+								li
+									a(href="#") PHP
+								li
+									a(href="#") WordPress
+							.divider
+							.tab-horizontal
+								ul.nav.nav-tabs
+									li.active
+										a(href="#horizontal_tab1", data-toggle="tab") Recent
+									li
+										a(href="#horizontal_tab2", data-toggle="tab") Popular
+								.tab-content.clearfix
+									#horizontal_tab1.tab-pane.fade.active.in
+										ul.unstyled.thumb-list
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-01.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Food Truck 
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-02.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Fixie Locavore 
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-03.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Accusamus Mcsweeney
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+									#horizontal_tab2.tab-pane.fade
+										ul.unstyled.thumb-list
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-02.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Food Truck 
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-03.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Fixie Locavore 
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+											li.thumb-content.clearfix
+												.thumb-figure
+													a(href="blog-single.html")
+														img(src="assets/blog/70_70-01.jpg", alt="")
+												h5.thumb-heading
+													a(href="blog-single.html") Accusamus Mcsweeney
+												p Food truck fixie locavore, accusamus mcsweeney's marfa.
+
+						.span8#blog_posts
+							.post
+								.post-content
+									h2.post-title 
+										a(href="blog-single.html") The Title 1
+									ul.post-info
+										li
+											span 
+												i.icon-calendar 
+											a(href="#") MAY 27, 2015
+										li
+											span
+												i.icon-pencil 
+											a(href="#") Admin
+										li
+											span
+												i.icon-pushpin 
+											a(href="#") Category
+										li
+											span
+												i.icon-comments-alt 
+											a(href="#") 5 Comments						
+								.post-image
+									a(href="blog-single.html")
+										img(src="assets/blog/950_380_01.jpg", alt="")
+									.image-shadow
+								.post-content
+									.post-excerpt
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										a.btn.btn-silver(href="blog-single.html") Read More							
+
+							.post
+								.post-content
+									h2.post-title 
+										a(href="blog-single.html") The Title 2
+									ul.post-info
+										li
+											span 
+												i.icon-calendar 
+											a(href="#") MAY 27, 2015
+										li
+											span
+												i.icon-pencil 
+											a(href="#") Admin
+										li
+											span
+												i.icon-pushpin 
+											a(href="#") Category
+										li
+											span
+												i.icon-comments-alt 
+											a(href="#") 5 Comments						
+								.post-image
+									a(href="blog-single.html")
+										img(src="assets/blog/950_380_02.jpg", alt="")
+									.image-shadow
+								.post-content
+									.post-excerpt
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										a.btn.btn-silver(href="blog-single.html") Read More							
+
+							.post
+								.post-content
+									h2.post-title 
+										a(href="blog-single.html") The Title 3
+									ul.post-info
+										li
+											span 
+												i.icon-calendar 
+											a(href="#") MAY 27, 2015
+										li
+											span
+												i.icon-pencil 
+											a(href="#") Admin
+										li
+											span
+												i.icon-pushpin 
+											a(href="#") Category
+										li
+											span
+												i.icon-comments-alt 
+											a(href="#") 5 Comments						
+								.post-image
+									a(href="blog-single.html")
+										img(src="assets/blog/950_380_03.jpg", alt="")
+									.image-shadow
+								.post-content
+									.post-excerpt
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										a.btn.btn-silver(href="blog-single.html") Read More							
+
+										
+
+
+
+
+		include partials/footer
+		

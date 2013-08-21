@@ -1,0 +1,66 @@
+!!! 5
+html
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// if lt IE 9
+			<html class="no-js lt-ie9">
+			link(rel='stylesheet', href='css/lt-ie9.css')
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// stylesheets
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato',  type='text/css')
+		link(rel='stylesheet', href='css/main.css')
+
+
+	body
+
+		//- Header
+		header.header
+			.shadow
+				.container
+					h2 
+						span.colored Light
+						|  - A Responsive Multi-Purpose HTML Template
+					p Clean and Elegant. 
+
+
+		//- Contents
+		.container
+			br
+			.row-fluid
+				.span5
+					h3 Dark Version
+					p 10+ color schemes to choose from.
+					a(href="../theresume-dark/index.html")
+						//- 554px width
+						img(src="assets/version-dark.png", alt="Dark Version")
+				.span2
+				.span5
+					h3 Light Version
+					p 10+ color schemes to choose from.
+					a(href="../theresume-light/index.html")
+						img(src="assets/version-light.png", alt="Light Version")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

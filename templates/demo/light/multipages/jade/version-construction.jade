@@ -1,0 +1,413 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// if lt IE 9
+			<html class="no-js lt-ie9">
+			link(rel='stylesheet', href='css/lt-ie9.css')
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// stylesheets
+		link(href='http://fonts.googleapis.com/css?family=Overlock', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='css/font-awesome.min.css')
+		link(rel='stylesheet', href='js/vendor/prettyphoto/css/prettyPhoto.css')
+		link(rel='stylesheet', href='js/vendor/countdown/jquery.countdown.css')
+		link(rel='stylesheet', href='css/flexslider.css')
+		link(rel='stylesheet', href='css/button.css')
+		link(rel='stylesheet', href='css/main.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		script
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+		script(src='js/jquery-migrate-1.2.1.min.js')
+
+		// camera slider
+		link(rel='stylesheet', href='js/vendor/camera/css/camera.css')
+		script(src='js/vendor/camera/scripts/jquery.easing.1.3.js') 
+		script(src='js/vendor/camera/scripts/camera.min.js') 
+
+
+	body.onepage.under-construction
+
+		// loading
+		img#loading(src="img/loading.gif", alt="loading")
+
+		// Header
+		header
+			// Logo
+			.logo
+				a(href="index.html")
+					img(src="assets/logo.png", alt="Logo")
+
+			// Nav
+			.flexnav-container
+				.container
+					.menu-button Menu 
+					nav
+						ul.flexnav( data-breakpoint='800')
+							li
+								a(href="#top") Home
+							li
+								a(href="#services") Services
+							li
+								a(href="#about") About
+							li
+								a(href="#contact") Contact
+		// Main Content
+		.content_wrapper
+
+			// revolution slider
+			#count-down
+				.fluid_container
+					.camera_wrap.camera_emboss#camera_bg
+						div(data-src="assets/slides/bridge.jpg")
+						div(data-src="assets/slides/road.jpg")
+						div(data-src="assets/slides/sea.jpg")
+					.coming
+						h1 COMING SOON!
+						p The site is almost done. Stay tuned!
+					.countdown-wrapper
+						.countdown-container
+							.countdown.clearfix
+			.clearfix
+
+
+			// services
+			section#services
+				.container
+					section.services
+						.page-header
+							h1.text-center Services
+						.row-fluid.text-center
+							.span3
+								i.icon-magic.large
+								h3 Ullamco Laboris
+								p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							.span3
+								i.icon-beaker.large
+								h3 Lorem Ipsum
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.span3
+								i.icon-cogs.large
+								h3 Ut Enim
+								p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							.span3
+								i.icon-rocket.large
+								h3 Asint Occaecat
+								p Asint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	
+
+			// about
+			section#about
+				.container
+					h1.text-center About
+					.row-fluid
+						.span6
+							img.alignleft(src="assets/logo-big.png", alt="logo")
+							p
+								strong Light
+								|  rerum hic incidunt odio iste voluptatem quo qui necessitatibus voluptatum dolore harum eaque quibusdam animi commodi explicabo dignissimos nulla sunt vero cumque.
+							p Explicabo dignissimos nulla sunt vero cumque.
+							p.muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+							p.text-warning Etiam porta sem malesuada magna mollis euismod.
+							p.text-error Donec ullamcorper nulla non metus auctor fringilla.
+							p Rum hic incidunt odio iste voluptatem quo qui necessitatibus voluptatum dolore harum eaque quibusdam animi commodi explicabo dignissimos nulla sunt vero cumque.
+						.span6
+							blockquote
+								p Commodi explicabo dignissimos nulla sunt vero, necessitatibus voluptatum dolore harum eaque quibusdam animi.
+								small Nesciunt Enim
+							ul
+								li Esse vero ullam cupiditate eaque.
+								li Ullam cupiditate eaque.
+									ul
+										li Adipisci molestias consectetur voluptatem
+										li Opisci molestias consectetur voluptatem
+								li Animi odit quod pariatur adipisci. molestias consectetur voluptatem
+							p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+							p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+
+					.row-fluid
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-01.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								.desc
+									h5 Team member
+										span CEO/Founder
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-02.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								//- .clearfix
+								.desc
+									h5 Team member
+										span Developer
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+					.row-fluid
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-03.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								.desc
+									h5 Team member
+										span Developer
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-04.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								//- .clearfix
+								.desc
+									h5 Team member
+										span Developer
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+					.row-fluid
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-05.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								.desc
+									h5 Team member
+										span Developer
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+						.span6
+							.member.clearfix
+								.photo
+									figure
+										img(src="assets/team/215_180-06.jpg", alt="member")
+									ul.social
+										li 
+											a(href="#")
+												i.icon-google-plus
+										li 
+											a(href="#")
+												i.icon-facebook
+										li 
+											a(href="#")
+												i.icon-twitter
+										li 
+											a(href="#")
+												i.icon-linkedin
+										li 
+											a(href="#")
+												i.icon-github
+										li 
+											a(href="#")
+												i.icon-pinterest
+								//- .clearfix
+								.desc
+									h5 Team member
+										span Developer
+									p Lorem ipsum dolor sit aed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+			section#contact
+				// contact map
+				#gmap
+				// form
+				.contact
+					.container
+						.page-header
+							h1.text-center Contact Us
+						.row-fluid
+							.span8
+								h3 Talk to Us
+								form.contact(action="#", method="post")
+									.row-fluid
+										.span3
+											label(for="form-name") Your Name
+										.span9
+											input#form-name(type="text", name="name", placeholder="Your name*", required="required")
+
+									.row-fluid
+										.span3
+											label(for="form-email") Your Mail
+										.span9
+											input#form-email(type="email", name="email", placeholder="Your email*", required="required")
+
+									.row-fluid
+										.span3
+											label(for="form-message") Message
+										.span9
+											textarea#form-message(type="text", name="message", placeholder="Your message")
+
+									.row-fluid
+										.span9.offset3
+											button(type="submit") Submit
+							.span4
+								h3 Contact Info
+								.contact-info
+									p
+										i.icon.icon-phone 
+										| +123 456 789 
+									p
+										i.icon.icon-envelope 
+										| mail@yourmail.com
+									p
+										i.icon.icon-map-marker 
+										| Street 123, Avenue 45, Country
+									p
+										i.icon.icon-globe 
+										| www.yoursite.com
+
+
+		// Footer
+		.footer
+			.container
+				.row-fluid
+					.span6
+						ul.social-icons
+							li 
+								a(href="#")
+									.icons-facebook
+							li 
+								a(href="#")
+									.icons-rss
+							li 
+								a(href="#")
+									.icons-tumblr
+							li 
+								a(href="#")
+									.icons-twitter
+							li 
+								a(href="#")
+									.icons-yahoo
+					.span6
+						p.copyright Copyright 2013 Light          
+
+		script(src='js/bootstrap.min.js')
+		script(src='js/jquery.flexnav.min.js')
+		script(src='js/jquery.smooth-scroll.js')
+		script(src='js/jquery.parallax-1.1.3.js')
+		script(src='js/jquery.fitvids.js')
+		script(src='js/jquery.flexslider-min.js')
+		script(src='js/jquery.hoverdir.js')
+		script(src='js/jquery.isotope.min.js')
+		script(src='js/vendor/prettyphoto/js/jquery.prettyPhoto.js')
+		script(src='js/vendor/countdown/jquery.countdown.js')
+		// Map and Contact form validate
+		script(src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7")
+		script(src='js/maplace.min.js')
+		script(src='js/jquery.validate.js')
+		script(src='js/main.js')

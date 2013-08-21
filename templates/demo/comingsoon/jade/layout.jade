@@ -1,0 +1,137 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// if lt IE 9
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+			link(href="css/ie8-grid-foundation-4.css", rel="stylesheet")
+
+		// ==========  stylesheets  ==========
+		block stylesheets
+			link(href="css/foundation.css", rel="stylesheet")
+			link(href="css/font-awesome.min.css", rel="stylesheet")
+			link(rel='stylesheet', href='js/vendor/camera/css/camera.css')
+			link(rel='stylesheet', href='js/vendor/countdown/jquery.countdown.css')
+			link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+			link(href="css/main.css", rel="stylesheet")
+
+			// script
+			script(src="js/vendor/custom.modernizr.js")
+
+	
+	body
+
+		// Header
+		Header.header
+			.inner
+				// Navbar
+				block nav
+					.row
+						.large-4.columns
+							.logo
+								h2 COMING
+									span.colored SOON
+						.large-6.large-offset-2.columns
+							ul.inline-list#nav
+								li
+									a(href="#services") Services
+								li
+									a(href="#about") About
+								li
+									a(href="#contact") Contact
+			// color schemes
+			ul.colors.inline-list
+				li(data-color='purple')
+				li(data-color='green')
+				li(data-color='turquoise')
+				li(data-color='forest-green')
+				li(data-color='blue')
+				li(data-color='baby-blue')
+				li(data-color='navy-blue')
+				li(data-color='rose')
+				li(data-color='red')
+				li(data-color='maroon')
+				li(data-color='yellow')
+				li(data-color='olive')
+				li(data-color='coffee')
+				li(data-color='pink')
+				li(data-color='orange')
+				li(data-color='grey')
+
+		// Main Content
+		block content
+
+
+		// Footer
+		block footer
+			footer.footer.text-center
+				p.copyright Copyright 2013 COMING SOON
+				ul.inline-list.text-center
+					li
+						a(href="#")
+							i.icon-twitter
+					li
+						a(href="#")
+							i.icon-dribbble
+					li
+						a(href="#")
+							i.icon-flickr
+					li
+						a(href="#")
+							i.icon-github
+					li
+						a(href="#")
+							i.icon-skype
+					li
+						a(href="#")
+							i.icon-facebook
+					li
+						a(href="#")
+							i.icon-google-plus
+					li
+						a(href="#")
+							i.icon-linkedin
+
+
+		// ==========  Scripts  ==========
+		block scripts
+			script
+				window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+				//- document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto.min' : 'js/vendor/jquery.min') + '.js><\/script>')
+			script(src="js/vendor/jquery-migrate-1.2.1.min.js")
+
+			// camera slider
+			script(src='js/vendor/camera/scripts/jquery.easing.1.3.js') 
+			script(src='js/vendor/camera/scripts/camera.min.js') 
+			// google map
+			script(src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7")
+			script(src='js/maplace.min.js')			
+			// validate
+			script(src='js/jquery.validate.js')
+			// smooth scroll
+			script(src='js/jquery.smooth-scroll.js')
+			// count down
+			script(src='js/vendor/countdown/jquery.countdown.js')
+			//- // foundation
+			//- script(src="js/foundation.min.js")
+			// custom script
+			script(src="js/main.js")
+
+
+
+

@@ -1,0 +1,72 @@
+!!! 5
+html
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// if lt IE 9
+			<html class="no-js lt-ie9">
+			link(rel='stylesheet', href='css/lt-ie9.css')
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// stylesheets
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato',  type='text/css')
+		link(rel='stylesheet', href='css/main.css')
+
+
+	body
+
+		//- Header
+		header.header
+			.shadow
+				.container
+					h2 
+						span.colored Light
+						|  - A Responsive Multi-Purpose HTML Template
+					p 7 portfolio layout, 6 blog layout, and much more. 
+
+
+		//- Contents
+		.container
+			br
+			.row-fluid
+				.span5
+					h3 Multiple Pages Version
+					p 10+ color schemes to choose from.
+					a(href="../multipages/index.html")
+						//- 554px width
+						img(src="assets/multipages.png", alt="Multiple Pages Version")
+				.span2
+				.span5
+					h3 One Page Version
+					p 10+ color schemes to choose from.
+					a(href="../onepage/index.html")
+						img(src="assets/onepage.png", alt="One Page Version")
+			.row-fluid
+				.span12.text-center
+					h3 Under Construction Version
+					p 10+ color schemes to choose from.
+					a(href="../construction/index.html")
+						img(src="assets/construction.png", alt="Under Construction Version")					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

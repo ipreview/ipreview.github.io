@@ -1,0 +1,417 @@
+
+
+/*=============================
+=            =Blog            =
+=============================*/
+
+// four shiny corner
+.post,
+.post-isotope,
+.item-portfolio {
+	position: relative;
+
+	&:hover {
+		& > span {
+			display: block;
+		}
+	}
+
+	& > span {
+		display: none;
+		width: 25px;
+		height: 25px;
+
+		&.top-left {
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			border-top: 1px solid $color_fallback;
+			border-top: 1px solid $color_main;
+			border-left: 1px solid $color_fallback;
+			border-left: 1px solid $color_main;
+			@include box-shadow( -2px -2px 6px -2px $color_main, 2px 2px 5px -2px $color_main inset);
+		}
+
+		&.top-right {
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			border-top: 1px solid $color_fallback;
+			border-top: 1px solid $color_main;
+			border-right: 1px solid $color_fallback;
+			border-right: 1px solid $color_main;
+			@include box-shadow( 2px -2px 6px -2px $color_main, -2px 2px 5px -2px $color_main inset);
+		}
+
+		&.bottom-right {
+			position: absolute;
+			bottom: -1px;
+			right: -1px;
+			border-bottom: 1px solid $color_fallback;
+			border-bottom: 1px solid $color_main;
+			border-right: 1px solid $color_fallback;
+			border-right: 1px solid $color_main;
+			@include box-shadow( 2px 2px 6px -2px $color_main, -2px -2px 5px -2px $color_main inset);
+		}
+
+		&.bottom-left {
+			position: absolute;
+			bottom: -1px;
+			left: -1px;
+			border-bottom: 1px solid $color_fallback;
+			border-bottom: 1px solid $color_main;
+			border-left: 1px solid $color_fallback;
+			border-left: 1px solid $color_main;
+			@include box-shadow( -2px 2px 6px -2px $color_main, 2px -2px 5px -2px $color_main inset);
+		}
+	}
+	
+}
+
+/*==========  blog, general  ==========*/
+.blog {
+	padding: 0 0 50px;
+}
+
+.post {
+	margin: 0 0 50px; 
+	padding: 25px 0; // for four shiny corner, or it'll not looks good.
+
+	// overwrite .flexslider, gmap, iframe
+	& > .flexslider{
+		margin-bottom: 25px;
+	}
+	
+	.audiojs {
+		max-width: 400px;
+		width: 100%;
+		height: 36px;
+
+		.scrubber {
+			width: 50%;
+		}
+	}
+}
+
+.post-image {
+
+	img {
+		padding: 4px;
+		border: 1px solid #fff;
+		outline: 1px solid #eaeaea;
+		background-color: #f5f5f5;		
+	}
+
+	.image-shadow {
+		width: 100%;
+		height: 35px;
+		background: image-url("shadow/shadow09min.png") no-repeat top center;
+		background-size: 100%;
+	}
+}
+
+h2.post-title {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 30px;
+	@include text-shadow(0 0 1px rgba(0, 0, 0, .4) );
+
+	a {
+		color: #fff;
+		@include transition(color .35s ease);
+
+		&:hover{
+			color: $color_fallback;
+			color: $color_main;
+			text-decoration: none;
+		}
+
+	}
+}
+
+ul.post-info {
+	margin: 5px 0 10px;
+	list-style: none;
+	padding: 5px 0;
+	// border-top: 1px solid #444;
+	// border-bottom: 1px solid #444;
+
+	li {
+		display: inline;
+		margin-right: 14px;
+
+		&> span {
+			color: $color_content_sub;
+		}
+
+		a {
+			color: $color_content;
+		}
+	}
+}
+
+/*==========  blog, grid, auto resize  ==========*/
+.blog-grid {
+	img {
+		max-width: 100%;
+	}
+
+	.post-isotope{
+		background: #252525;
+		// background: $color_li_odd;
+		overflow: hidden;
+	}
+
+	.post-content {
+		padding: 5px
+	}
+
+	h2.post-title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+}
+
+
+/*==========  blog, waterfall, isotope, centered ==========*/
+
+// for isotope centered, jquery-migrate.js is necessary
+#blog-waterfall {
+	margin: 0 auto 20px;
+	padding: 10px; // so that the nice four shine will not overflow: hidden
+	position: relative;
+	overflow: hidden;
+}
+
+.blog-waterfall {
+	.post-isotope {
+		width: 200px; // the box-sizing should be consistent with JS, or it'll break the layout
+		margin: 5px;
+		background: #252525;
+		// background: $color_li_odd;
+	}
+
+	.post-content {
+		padding: 5px
+	}
+
+	h2.post-title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+}
+
+/*==========  different post types  ==========*/
+
+
+
+// tweet
+.tweet {
+	margin-left: 58px;
+
+	.author{
+
+		strong {
+			font-weight: normal;
+			color: $color_fallback;
+			color: $color_main;
+		}
+
+		span {
+			color: $color_unactive;
+		}
+	}
+
+	.avatar{
+		float: left;
+		margin-left: -58px;
+		margin-top: 3px;
+		width: 48px;
+		height: 48px;
+	}
+
+}
+
+// quote
+.post-thumbnail {
+	background-color: $color_li;
+	padding: 10px;
+
+	// blockquote
+	.quote {
+		font-style: italic;
+		font-family: $font_italic;
+		font-size: 1em
+	}
+
+	.author {
+		text-align: right;
+		font-family: $font_italic;
+		font-size: 0.85em;
+	}
+
+	// link
+	.icons-link {
+		display: inline-block;
+		margin-right: 10px;
+	}	
+
+	.link {
+		font-size: 18px;
+		font-weight: normal;
+		color: #fff;
+	}
+}
+
+// chat post
+.post.chat-post {
+	p {
+		padding: 5px 8px;
+		margin: 0 0 5px;
+
+		&:nth-child(even){
+			background-color: $color_li;
+		}
+	}
+}
+
+
+/*==========  blog, full width  ==========*/
+.blog-full,
+.blog-fullwidth,
+.blog-thumbnail,
+.blog-single {
+	.container {
+		max-width: 960px;
+	}
+}
+
+/*==========  blog, thumbnail  ==========*/
+.thumbnail-post{
+
+	.post-thumb {
+		float: left;
+		margin: 0 20px 10px 0;
+		padding: 4px;
+		border: 1px solid #333;
+		max-width: 280px;
+		background-color: $color_sub;
+
+	}
+}
+
+@media (max-width: 480px) {
+
+	.thumbnail-post{
+
+		.post-thumb {
+			float: none;
+			margin: 0 20px 10px 0;
+		}
+	}
+
+}
+
+
+/*==========  single post  ==========*/
+
+// comments
+.post-comments {
+	ol, ul {
+		list-style: none;
+	}
+
+	ol {
+		margin: 0 0 50px 0;
+	}
+
+	ul {
+		margin-left: 8%;
+	}
+
+	li {
+		margin: 30px 0 0;
+	}
+
+}
+
+.comment-gravatar {
+	float: left;
+	width: 75px;
+	overflow: hidden;
+	@include border-radius(5px);
+}
+
+.comment-content {
+	padding-left: 90px;
+
+	& > cite {
+		color: $color_fallback;
+		color: $color_main;
+
+		&:after {
+			content: ' / ';
+			color: $color_unactive;
+		}
+	}
+
+	span.date {
+		color: $color_content_sub;
+	}
+
+	a.reply{
+		font-size: 12px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: $color_content_sub;
+	}
+}
+
+/*==========  widget  ==========*/
+
+.widget-area {
+	margin-top: 35px;
+
+	.divider {
+		margin: 1em 0 2em;
+	}
+}
+
+ul.widget-categories {
+	li a {
+		color: $color_sub;
+	}
+}
+
+// 
+.thumb-content {
+	margin-left: 80px;
+	font-size: 12px;
+	color: $color_sub;
+
+	h5 {
+		font-size: 14px;
+		margin: 5px 0;
+	}
+
+	.thumb-figure{
+		float: left;
+		margin-left: -80px;
+		margin-bottom: 10px;
+		width: 70px;
+		height: 70px;
+		padding: 3px;
+		background-color: $color_sub;
+		@include transition(background-color .3s ease-in-out);
+
+		&:hover {
+			background-color: $color_main;
+		}
+	}
+
+}
+
+/*-----  End of =Blog  ------*/
+

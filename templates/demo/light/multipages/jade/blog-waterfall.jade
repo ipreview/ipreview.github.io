@@ -1,0 +1,107 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+	body
+		include partials/header
+
+		.content_wrapper
+			.filters-container
+				ul#items_filter.items-filters.clearfix
+					li(data-filter="*") Show All
+					li(data-filter=".item-yummy") Yummy
+
+			.main-content
+				.blog.blog-waterfall 
+
+					//- trigger blog waterfall when $('.posts-container').length is true
+					#blog-waterfall.clearfix
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_01.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_02.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope.item-yummy
+							a(href="blog-single.html")
+								img(src="assets/blog/200_09.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope.item-yummy
+							a(href="blog-single.html")
+								img(src="assets/blog/200_04.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_05.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_06.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_07.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_08.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+						.post-isotope
+							a(href="blog-single.html")
+								img(src="assets/blog/200_10.jpeg", alt="")
+							.post-content
+								h2.post-title 
+									a(href="#") The Title
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+
+		include partials/footer

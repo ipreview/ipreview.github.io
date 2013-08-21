@@ -1,0 +1,118 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+	body
+		include partials/header
+		.main-content
+			.blog.blog-single
+				.container
+					.post
+						.post-content
+							h2.post-title 
+								a(href="blog-single.html") Single Post
+							ul.post-info
+								li
+									span 
+										i.icon-calendar 
+									a(href="#") MAY 27, 2015
+								li
+									span
+										i.icon-pencil 
+									a(href="#") Admin
+								li
+									span
+										i.icon-pushpin 
+									a(href="#") Category
+								li
+									span
+										i.icon-comments-alt 
+									a(href="#") 5 Comments						
+						.post-image
+							a(href="blog-single.html")
+								img(src="assets/blog/950_380_04.jpg", alt="")
+							.image-shadow
+						.post-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							p Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+					.post-comments
+						h2 5 Comments
+						ol.comment
+							li.clearfix
+								.comment-gravatar
+									img(src="assets/gravatar/gravatar.jpg", alt="")
+								.comment-content
+									cite Admin
+									span.date May 27, 2015
+									p Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiin culpa qui officia deserunt mollit anim id est laborum.
+									a.reply(href="#") ( Reply )
+								ul
+									li.clearfix
+										.comment-gravatar
+											img(src="assets/gravatar/gravatar.jpg", alt="")
+										.comment-content
+											cite Admin
+											span.date May 27, 2015
+											p Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiin culpa qui officia deserunt mollit anim id est laborum.
+											a.reply(href="#") ( Reply )
+
+									li.clearfix
+										.comment-gravatar
+											img(src="assets/gravatar/gravatar.jpg", alt="")
+										.comment-content
+											cite Admin
+											span.date May 27, 2015
+											p Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiin culpa qui officia deserunt mollit anim id est laborum.
+											a.reply(href="#") ( Reply )
+
+							li.clearfix
+								.comment-gravatar
+									img(src="assets/gravatar/gravatar.jpg", alt="")
+								.comment-content
+									cite Admin
+									span.date May 27, 2015
+									p Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiin culpa qui officia deserunt mollit anim id est laborum.
+									a.reply(href="#") ( Reply )
+
+							li.clearfix
+								.comment-gravatar
+									img(src="assets/gravatar/gravatar.jpg", alt="")
+								.comment-content
+									cite Admin
+									span.date May 27, 2015
+									p Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiin culpa qui officia deserunt mollit anim id est laborum.
+									a.reply(href="#") ( Reply )
+
+					.post-respond
+						h2 Leave a comment
+						form.form(action="#", method="post")
+							.row-fluid
+								.span6
+									label(for="form-name") Your Name:
+									input#form-name(type="text", name="name", placeholder="Your name*", required="required")
+
+								.span6
+									label(for="form-email") Your Mail:
+									input#form-email(type="email", name="email", placeholder="Your email*", required="required")
+
+							.row-fluid
+								.span12
+									label(for="form-message") Comment:
+									textarea#form-message(name="message", placeholder="Your message*", required="required")
+
+							.row-fluid
+								.span12
+									button.btn.btn-silver(type="submit") Submit				
+
+		include partials/footer
+

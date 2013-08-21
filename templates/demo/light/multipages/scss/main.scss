@@ -1,0 +1,41 @@
+@import
+	"icons/*.png";
+@include all-icons-sprites;
+
+@import
+	"compass/css3";
+
+@import
+	"variables.scss",
+	"components/global.scss",
+	"components/sprites.scss",
+	"components/typography.scss",
+	"components/slider.scss",
+	"components/elements.scss",
+	"components/messages.scss",
+	"components/togglers.scss",
+	"components/tabs.scss",
+	// "components/buttons.scss",
+	"components/tables.scss",
+	"components/forms.scss",
+	"components/pricing_tables.scss",
+	"components/pagination.scss",
+	"components/animate.scss"
+	;
+
+// import parts
+@import 
+	"parts/page.scss", // style for general page
+	"parts/sectors.scss", // all sectors, such as team members, services
+	"parts/contact.scss", // contact page
+	"parts/isotope.scss", // general isotope style, put before these uses isotope, like blog, portfolio
+	"parts/blog.scss",
+	"parts/portfolio.scss",
+	"parts/testimonials.scss",
+	"parts/onepage.scss"
+	;
+
+
+
+
+

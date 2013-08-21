@@ -1,0 +1,25 @@
+//- loading
+img#loading(src="img/loading.gif", alt="loading")
+
+header
+	//- Logo
+	.logo
+		a(href="index.html")
+			img(src="assets/logo.png", alt="Logo")
+
+	//- Nav
+	.flexnav-container
+		.container
+			.menu-button Menu 
+			nav
+				ul.flexnav( data-breakpoint='800')
+					li
+						a(href="#top") Home
+					li
+						a(href="#portfolio") Portfolio
+					li
+						a(href="#about") About
+					li
+						a(href="#services") Services
+					li
+						a(href="#contact") Contact

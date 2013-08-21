@@ -1,0 +1,27 @@
+.container {
+	text-align: center;
+}
+
+.header {
+	background: url('../img/bg/bg31.jpg') repeat;
+	border-bottom: 1px solid #bdbdbc;
+	outline: 1px solid #fff;
+}
+
+.shadow {
+	background: url('../img/shadow-top.png') top center no-repeat;
+}
+
+body {
+	background: url('../img/bg/bg.jpg') repeat;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+}
+
+span.colored {
+	color: #5384A3;
+}

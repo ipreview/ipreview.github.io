@@ -1,0 +1,112 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	head
+		meta(charset='utf-8')
+		//- fix W3C validate issue
+		// if IE
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width')
+
+		// if lt IE 9
+			<html class="no-js lt-ie9">
+			link(rel='stylesheet', href='css/lt-ie9.css')
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// stylesheets
+		link(href='http://fonts.googleapis.com/css?family=Overlock', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='css/font-awesome.min.css')
+		link(rel='stylesheet', href='js/vendor/prettyphoto/css/prettyPhoto.css')
+		link(rel='stylesheet', href='css/flexslider.css')
+		link(rel='stylesheet', href='css/main.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+		script
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+		script(src='js/jquery-migrate-1.2.1.min.js')
+
+		// camera slider
+		link(rel='stylesheet', href='js/vendor/camera/css/camera.css')
+		script(src='js/vendor/camera/scripts/jquery.easing.1.3.js') 
+		script(src='js/vendor/camera/scripts/camera.min.js') 
+
+	body
+		include partials/header
+
+		.content_wrapper
+			.fluid_container
+				.camera_wrap.camera_emboss#camera_wrap
+					div(data-thumb="assets/slides/thumbs/bridge.jpg", data-src="assets/slides/bridge.jpg")
+						.camera_caption.fadeFromBottom
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					div(data-thumb="assets/slides/thumbs/leaf.jpg", data-src="assets/slides/leaf.jpg")
+						.camera_caption.fadeIn
+							| Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					div(data-thumb="assets/slides/thumbs/road.jpg", data-src="assets/slides/road.jpg")
+						.camera_caption.moveFomLeft
+							| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					div(data-thumb="assets/slides/thumbs/sea.jpg", data-src="assets/slides/sea.jpg")
+						.camera_caption.moveFromTop
+							| Changed the time and the transition time of this slide
+					div(data-thumb="assets/slides/thumbs/shelter.jpg", data-src="assets/slides/shelter.jpg")
+						.camera_caption.fadeFromBottom
+							| Changed the time and the transition time of this slide
+					div(data-thumb="assets/slides/thumbs/tree.jpg", data-src="assets/slides/tree.jpg")
+						.camera_caption.fadeFromTop
+							| Changed the time and the transition time of this slide
+			.container
+				h3 Blockquote
+				h5 Left
+				blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+				h5 Right
+				blockquote.pull-right Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+
+				h3 Dropcap
+				h5 Normal
+				p
+					span.dropcap L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Normal Colored
+				p
+					span.dropcap.colored L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square.colored D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle.colored E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				.divider
+						
+				h3 Hightlights
+				p
+					| Opsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quam, soluta, quia mollitia sequi voluptas magnam perspiciatis deleniti 
+					span.highlight ratione
+					|  ad molestias eum minima sed libero enim laborum sunt vel porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptas, placeat provident impedit
+					strong  maiores
+					|  odio doloribus corrupti exercitationem veritatis ipsum ipsam adipisci quis consequatur assumenda rerum corporis possimus ad architecto
+				.divider 
+
+
+
+		include partials/footer

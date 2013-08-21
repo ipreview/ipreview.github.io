@@ -1,0 +1,106 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if IE 8
+	html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+	//<![endif]
+	include partials/head
+
+	body
+		include partials/header
+
+
+		.main-content
+			.container.portfolio-normal
+				.row-fluid
+					.span7
+						#myCarousel.carousel.slide
+							ol.carousel-indicators
+								li.active(data-target="#myCarousel", data-slide-to="0")
+								li(data-target="#myCarousel", data-slide-to="1")
+								li(data-target="#myCarousel", data-slide-to="2")
+							.carousel-inner
+								.active.item
+									img(src="assets/portfolio/550_270-01.jpg", alt="")
+									.carousel-caption
+										h4 Title One
+										p Some Description
+
+								.item
+									img(src="assets/portfolio/550_270-02.jpg", alt="")
+									.carousel-caption
+										h4 Title One
+										p Some Description
+								.item
+									img(src="assets/portfolio/550_270-03.jpg", alt="")
+									.carousel-caption
+										h4 Title One
+										p Some Description
+
+					.span5
+						h2.portfolio-title Brief Desription
+						ul.portfolio-info
+								li
+									span 
+										i.icon-calendar 
+									a(href="#") MAY 27, 2015
+								li
+									span
+										i.icon-pushpin 
+									a(href="#") Category
+						p
+							span.dropcap.colored L
+							| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste assumenda magni quae architecto fugiat libero.
+							| Perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+						p
+							button.btn.btn-small Preview
+							|  &nbsp;&nbsp;&nbsp;
+							button.btn.btn-small Details
+
+				h3 Blockquote
+				h5 Left
+				blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+				h5 Right
+				blockquote.pull-right Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ducimus, provident, accusantium quasi sapiente ad eaque delectus dolores hic praesentium inventore pariatur ipsa neque excepturi enim aliquid rerum dolore nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse, fuga tempora aliquid impedit debitis odio illum laboriosam dolores sed earum et iste iure atque quam illo a repudiandae in.
+
+				h3 Dropcap
+				h5 Normal
+				p
+					span.dropcap L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Normal Colored
+				p
+					span.dropcap.colored L
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Square
+				p
+					span.dropcap-square.colored D
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				h5 Circle
+				p
+					span.dropcap-circle.colored E
+					| orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, in, laboriosam, dignissimos nobis quaerat vitae a facere esse neque laudantium nisi atque quos assumenda magni quae architecto fugiat libero.
+				.divider
+					
+				h3 Hightlights
+				p
+					| Opsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quam, soluta, quia mollitia sequi voluptas magnam perspiciatis deleniti 
+					span.highlight ratione
+					|  ad molestias eum minima sed libero enim laborum sunt vel porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptas, placeat provident impedit
+					strong  maiores
+					|  odio doloribus corrupti exercitationem veritatis ipsum ipsam adipisci quis consequatur assumenda rerum corporis possimus ad architecto
+
+
+		include partials/footer

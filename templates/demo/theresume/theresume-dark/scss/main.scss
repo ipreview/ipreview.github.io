@@ -1,0 +1,610 @@
+
+// variable
+$color_main: rgba(130,0,104,.8); // the main color of color schemes
+$color_fallback: rgb(130,0,104); // fallback for ie8
+
+$color_odd: #e8e8e8; // color of odd background, header, footer
+	// light: #e8e8e8
+	// dark: #1F1F1F
+$color_body: #F0F0F0;
+	// light: #F0F0F0
+	// dark: #515153
+
+$color_border-bottom: #bbb; // used as divider
+	// light: #bbb
+	// dark: #111
+$color_border-top: #fff;
+	// light: #fff
+	// dark: #666
+
+$color_heading: #222; // color of heading, title text
+	// light: #222;
+	// dark: #ddd;
+$color_sub: #818181; // sub content text color
+
+//  timeline
+$color_tl_bg: #fff;
+	// light: #fff
+	// dark: #333333
+$tl_bg: 'bg-timeline.png';
+	// light: bg-timeline.png
+	// dark: bg-timeline-dark.png
+$color_tl_bg_odd: #F5F5F5; // header, footer background
+	// light: #F5F5F5
+	// dark: #2D2D2D
+$color_tl_border: #e6e6e6;
+	// light: #e6e6e6
+	// dark: #272727	
+
+
+@import "compass/css3";
+
+// be sure to add 'position: relative' to its parent container first
+@mixin top-up-triangle {
+	&:before {
+		content: '';
+		position: absolute;
+		left: 49%; 
+		top: -6px; // because Foundation use "box-sizing: border-box"
+		width: 0px;
+		height: 0px;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-bottom: 6px solid $color_fallback;
+		border-bottom: 6px solid $color_main;
+	}		
+}
+
+// be sure to add 'position: relative' to its parent container first
+@mixin bottom-up-triangle ($color: #fff) {
+	&:after {
+		content: '';
+		position: absolute;
+		left: 49%; 
+		bottom: 0; // because Foundation use "box-sizing: border-box"
+		width: 0px;
+		height: 0px;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-bottom: 6px solid $color;
+	}
+}
+
+/*================================
+=            =general            =
+================================*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: $color_body;
+	color: $color_sub;
+}
+
+.container {
+	max-width: 1040px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color_heading;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+}
+
+a {
+	color: $color_fallback;
+	color: $color_main;
+}
+
+section.colored {
+	color: #fff;
+	background-color: $color_fallback;
+	background-color: $color_main;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.page-title {
+	background: image-url('divider-white.png') repeat-x center center;
+
+	h1, h2, h3, h4, h5, h6 {
+		display: inline-block;
+		padding: 0 10px;
+		background-color: #fff;
+	}
+}
+
+span.colored {
+	color: $color_fallback;
+	color: $color_main;	
+}
+
+button[type="submit"] {
+	background-color: lighten($color_fallback, 5);
+	background-color: lighten($color_main, 5);
+	border-color: darken($color_fallback, 10);
+	border-color: darken($color_main, 10);
+
+	&:hover {
+		background-color: $color_fallback;
+		background-color: $color_main;		
+	}
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+
+
+i.large {
+	font-size: 60px;
+}
+
+/* =icons */
+.icon-arrow-up.go-top {
+	position: fixed;
+	right: 10%;
+	bottom: 35px;
+	z-index: 10;
+	padding: 1em;
+	color: #fff;
+	background-color: lighten($color_fallback, 5);
+	background-color: lighten($color_main, 5);
+	@include border-radius(3px);
+	@include transition(all .35s ease-in-out);
+
+	&:hover {
+		cursor: pointer;
+		background-color: lighten($color_fallback, 2);
+		background-color: darken($color_main, 2);
+	}
+}
+
+/*-----  End of =general  ------*/
+
+
+/*===============================
+=            =header            =
+===============================*/
+
+.header {
+	position: relative;
+	border-top: 4px solid $color_fallback;
+	border-top: 4px solid $color_main;
+	border-bottom: 1px solid $color_fallback;
+	border-bottom: 1px solid $color_main;
+	padding: 10px 0 6px;
+	background: $color_odd;
+
+	h2 {
+		font-size: 2em;
+		margin: 0;
+	}
+
+	ul.inline-list {
+		float: right;		
+	}
+
+	.large-6 {
+		padding-top: 16px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header {
+		text-align: center;
+
+		ul.inline-list {
+			float: none;		
+			width: 340px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+	ul.colors {
+		display: none;
+	}
+}
+
+/* =colors */
+ul.colors {
+	position: absolute;
+	right: 10%;
+	top: 63px;
+	z-index: 1;
+
+	&.inline-list li {
+		margin-left: .2em;
+	}
+
+	li {
+		width: 24px;
+		height: 24px;
+		border: 1px solid #333;
+		// @include transition(all .1s ease-in-out); // tansition flickring
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.dim {
+			opacity: 0.3;
+		}
+	}
+
+	li[data-color='purple'] {
+		background-color: rgb(130,0,104);
+	}
+	li[data-color='green'] {
+		background-color: rgb(66,119,57);
+	}
+	li[data-color='turquoise'] {
+		background-color: rgb(23,154,149);
+	}
+	li[data-color='forest-green'] {
+		background-color: rgb(1,68,33);
+	}
+	li[data-color='blue'] {
+		background-color: rgb(0,153,255);
+	}
+	li[data-color='baby-blue'] {
+		background-color: rgb(137,207,240);
+	}
+	li[data-color='navy-blue'] {
+		background-color: rgb(0,0,128);
+	}
+	li[data-color='rose'] {
+		background-color: rgb(230,62,86);
+	}
+	li[data-color='red'] {
+		background-color: rgb(255,0,0);
+	}
+	li[data-color='maroon'] {
+		background-color: rgb(128,0,0);
+	}
+	li[data-color='midori'] {
+		background-color: rgb(227,249,136);
+	}
+	li[data-color='yellow'] {
+		background-color: rgb(255,255,0);
+	}
+	li[data-color='olive'] {
+		background-color: rgb(128,128,0);
+	}
+	li[data-color='coffee'] {
+		background-color: rgb(111,78,55);
+	}
+	li[data-color='pink'] {
+		background-color: rgb(255,192,203);
+	}
+	li[data-color='orange'] {
+		background-color: rgb(205,79,0);
+	}
+	li[data-color='grey'] {
+		background-color: rgb(170,170,170);
+	}
+
+}
+
+/*-----  End of =header  ------*/
+
+
+
+/*=============================================
+=            =about            =
+=============================================*/
+
+/*-----  End of =about  ------*/
+.about {
+	border-top: 1px solid $color_border-top;
+	border-bottom: 1px solid $color_border-bottom;
+	background-color: $color_odd;
+	padding: 30px 0;
+
+	.container {
+		box-sizing: border-box;
+		position: relative;
+		min-height: 160px;
+		padding-right: 250px;
+	}
+
+	h1 {
+		line-height: 1;
+		margin-bottom: .1em;
+	}
+
+	.profile {
+		@include border-radius(50%);
+		overflow: hidden;
+		position: absolute;
+		right: 20px;
+		bottom: -100px;
+		@include transition(all .35s ease-in-out);
+		@include box-shadow(0 0 0 5px #F5F5F5, 0 0 15px 0 rgba(0, 0, 0, 1));
+
+		img {
+			@include border-radius(50%); // fix opera
+		}
+
+		&:hover {
+			@include box-shadow(0 0 0 5px $color_main, 0 0 15px 0 rgba(0, 0, 0, 0.5));
+		}
+	}
+
+	.inline-list li {
+		margin-bottom: .2em;
+
+		i {
+			display: inline-block;
+			text-align: center;
+			width: 24px;
+			height: 24px;
+			background-color: $color_fallback;
+			background-color: $color_main;
+			@include border-radius (50%);
+			line-height: 24px;
+			font-size: 14px;
+			color: #fff;
+		
+		}
+	}
+
+}
+
+.lt-ie9 .about .container {
+	width: 1040px; // max-width doesn't work with box-sizing:borderbox
+}
+
+@media only screen and (max-width: 767px) {
+	.about {
+
+		.profile {
+			bottom: 0px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.about {
+		.container {
+			padding-right: 20px;
+		}
+
+		.profile {
+			display: none;
+		}
+	}
+}
+
+/*=================================
+=            =timeline            =
+=================================*/
+
+.main-content {
+	border-top: 1px solid $color_border-top;
+}
+
+.timeline {
+	background: image-url($tl_bg) repeat-y top center;
+	margin: 50px auto;
+
+	.tl-separator {
+		margin-top: 50px;
+		text-align: center;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		h3 {
+			display: inline-block;
+			padding: 5px 10px;
+			margin: 0;
+			width: 250px;
+			background-color: $color_tl_bg_odd;
+			border: 1px solid $color_tl_border;
+			@include border-radius (5px);
+		}
+	}
+
+	article {
+		position: relative;
+		display: block;
+		margin-top: 50px;
+		border: 1px solid $color_tl_border;
+		@include border-radius (5px);
+		@include box-shadow (0 0 5px rgba(0, 0, 0, .3));
+		width: 45%;
+		background: $color_tl_bg;
+		@include transition(all .35s ease-in-out);
+
+		span.point {
+			position: absolute;
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: #777;
+			@include border-radius(50%);
+			@include box-shadow(0 0 0 3px #F5F5F5, 0 0 6px 0 rgba(0, 0, 0, 1));
+			@include transition(all .35s ease-in-out);
+		}
+
+		&:hover {
+			@include box-shadow(0 0 0 5px $color_main, 0 0 15px 0 rgba(0, 0, 0, 0.5));
+
+			span.point {
+				@include box-shadow(0 0 0 3px $color_main, 0 0 15px 0 rgba(0, 0, 0, 0.5));
+			}
+		}
+
+		&.odd {
+			float: left;
+
+			span.point {
+				right: -11.1111111112%; // 45% Width of container * x = 5% Width of container
+				top: 20px;
+				// margin-right: -5px; // center point
+			}
+		}
+
+		&.even {
+			float: right;
+			margin-top: 100px;
+
+			span.point {
+				left: -11.1111111112%; 
+				top: 20px;
+				// margin-left: -5px;
+			}
+		}
+
+
+	}
+
+	.tl-header,
+	.tl-footer {
+		background: $color_tl_bg_odd;
+		padding: 10px;
+		color: $color_heading;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.tl-header {
+		border-bottom: 1px dashed $color_tl_border;
+	}
+
+	.tl-footer {
+		border-top: 1px dashed $color_tl_border;
+	}
+
+	.tl-content {
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px)  {
+	.timeline {
+		article {
+			&.odd {
+				float: none;
+				width: 100%;
+
+				span.point {
+					left: 50%;
+					top: -10px;
+					margin-left: -5px;
+				}
+			}
+
+			&.even {
+				float: none;
+				width: 100%;
+				margin-top: 50px;
+
+				span.point {
+					left: 50%;
+					top: -10px;
+					margin-left: -5px;
+				}
+			}
+		}
+	}
+}
+
+
+/*-----  End of =timeline  ------*/
+
+
+/*==================================
+=            =portfolio            =
+==================================*/
+
+.portfolio {
+	margin: 50px;
+}
+
+
+/*-----  End of =portfolio  ------*/
+
+
+
+
+
+/*================================
+=            =footer             =
+================================*/
+
+.footer {
+	background-color: $color_odd; // #222
+	padding: 2em;
+	border-top: 3px solid $color_fallback;
+	border-top: 3px solid $color_main;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 49%; 
+		top: 0; // because Foundation use "box-sizing: border-box"
+		width: 0px;
+		height: 0px;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 6px solid $color_fallback;
+		border-top: 6px solid $color_main;
+	}
+
+	a:hover {
+		color: #fff;
+	}
+
+	.skill {
+		margin-bottom: .5em;
+		p {
+			margin-bottom: .1em;
+		}
+
+		ul {
+			margin: 0;
+			margin-left: -.5em;
+		}
+
+		li {
+			width: 20px;
+			height: 20px;
+			margin-left: .5em;
+			margin-bottom: .1em;
+			@include border-radius (3px);
+
+			&.on {
+				background-color: $color_fallback;
+				background-color: $color_main;
+			}
+
+			&.off {
+				background-color: #B1B2B6;
+			}			
+		}
+
+	}
+
+}
+
+
+/*-----  End of =footer   ------*/
+
+
+
