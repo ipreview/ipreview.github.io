@@ -3,6 +3,8 @@
 
   $.fn.flexMenu = (options) ->
     return this.each( ->
+      console.log 'hi'
+
       # settings
       settings = $.extend({}, $.fn.flexMenu.defaults, options)
 

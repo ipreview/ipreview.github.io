@@ -22,12 +22,12 @@ html
 
   body
     block header
-      header.clearfix
+      .header.clearfix
         h1 Responsive Multi-Level Menu
           span Off-Canvas / Toggle pattern responsive navigation / menu.
         
         block demo-nav
-          nav.demos
+          .demos
               a.active(href="index.html") Demo 1: Off-Canvas
               a(href="index2.html") Demo 2: Toggle Pattern
     block nav
@@ -36,7 +36,7 @@ html
           span.fm-bar
           span.fm-bar
           span.fm-bar
-        nav.menu.clearfix
+        .menu.clearfix
           ul
             //- first level
             li
@@ -135,6 +135,6 @@ html
 
   block script
     script
-      (function(){
-        $('nav.menu').flexMenu();
+      (function($){
+        $('.menu').flexMenu();
       })(jQuery);
