@@ -11,17 +11,6 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
-    "\/js\/vendor\/jquery-1.10.2.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery-1.10.2.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.10.2-min.js",
-      "fileType" : 64
-    },
     "\/css\/main.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -30,6 +19,15 @@
       "inputAbbreviatedPath" : "\/css\/main.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/layout.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/layout.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
     },
     "\/js\/vendor\/zepto.js" : {
       "ignoreWasSetByUser" : 0,
@@ -53,14 +51,16 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/js\/bootstrap-min.js",
       "fileType" : 64
     },
-    "\/layout.html" : {
+    "\/js\/vendor\/jquery-1.10.2.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/layout.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery-1.10.2.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.10.2-min.js",
+      "fileType" : 64
     },
     "\/jade\/index2.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -150,21 +150,21 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/js\/vendor\/bootstrap\/css\/bootstrap.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/css\/bootstrap.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/js\/vendor\/font-awesome\/css\/font-awesome.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/vendor\/font-awesome\/css\/font-awesome.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/vendor\/bootstrap\/css\/bootstrap.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/css\/bootstrap.min.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },

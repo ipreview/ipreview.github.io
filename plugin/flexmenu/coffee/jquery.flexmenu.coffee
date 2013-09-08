@@ -96,9 +96,9 @@
 
           # unbind events to prevent binding same event more the once Bug
           $li.off('mouseenter mouseleave') 
-          $navicon.off('touchstart click')
+          $navicon.off('click')
 
-          $navicon.on('touchstart click', (e)->
+          $navicon.on('click', (e)->
             e.stopPropagation()
             $this = $(@)
             $sub = $this.parent('.with-ul').children('ul')
@@ -116,7 +116,7 @@
 
           # unbind events to prevent binding same event more the once Bug
           $li.off('mouseenter mouseleave') 
-          $navicon.off('touchstart click')
+          $navicon.off('click')
 
           $li.on('mouseenter', ->
             $(@).children('ul').stop(true, true).slideDown(settings.animationSpeed)
