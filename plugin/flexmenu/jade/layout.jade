@@ -1,12 +1,24 @@
 !!!
+//if lt IE 7
+  <html class="lt-ie9 lt-ie8 lt-ie7">
+//if IE 7
+  <html class="lt-ie9 lt-ie8">
+//if lt IE 8
+  <html class="lt-ie9">
+
+//[if gt IE 8]><!
 html
+  //<![endif]
   head
     meta(charset='utf-8')
     title jQuery Plugin
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    //if lt IE 8
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
     link(rel='stylesheet', href='js/vendor/bootstrap/css/bootstrap.css')
-    //- link(rel='stylesheet', href='js/vendor/font-awesome/css/font-awesome.css')
-    link(rel='stylesheet', href='css/main.css')
     link(rel='stylesheet', href='css/jquery.flexmenu.css')
+    link(rel='stylesheet', href='css/main.css')
 
   body
     block header
