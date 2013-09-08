@@ -20,6 +20,10 @@ html
     link(rel='stylesheet', href='css/jquery.flexmenu.css')
     link(rel='stylesheet', href='css/main.css')
 
+    //- put scripts in header to prevent flash
+    script(src='js/vendor/jquery-1.10.2.js')
+    script(src='js/jquery.flexmenu.js')
+
   body
     block header
       .header.clearfix
@@ -130,8 +134,7 @@ html
 
 
     block footer
-      script(src='js/vendor/jquery-1.10.2.js')
-      script(src='js/jquery.flexmenu.js')
+
 
   block script
     script
