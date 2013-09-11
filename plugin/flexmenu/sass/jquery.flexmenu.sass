@@ -3,13 +3,14 @@
 @import "compass/css3"
 
 // nav container, just for decoration
-.nav-container
+.fm-container
   border: solid #292929
   border-width: 1px 0
   background: #333 image-url('bg-nav_gradient.png') repeat-x
 
 // Menu button for mobile
 .fm-button
+  box-sizing: border-box
   margin: 2px 0 2px 20px 
   padding: 14px
   width: 52px
@@ -32,6 +33,19 @@
 
   .fm-bar + .fm-bar
     margin-top: 4px
+
+.flexmenu
+  // clearfix
+  &:before,
+  &:after
+    display: table
+    content: " "
+
+  &:after
+    clear: both
+
+  a
+    text-decoration: none
 
 /*==========  Toggle pattern  ==========*/
 .flexmenu.fm-toggle.fm-sm
